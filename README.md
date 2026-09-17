@@ -42,10 +42,10 @@ flowchart TD
     C --> D[Retriever]
     D --> E[LLM provider<br/>fixtures by default, Groq for live runs]
     E --> F[Draft brief<br/>prose + proposed state]
-    F --> G[Claim extraction]
-    G --> H[Evidence validation<br/>semantic + retrieval + entailment]
-    C --> I[Contradiction detection<br/>whole record, not top-k]
-    H --> J[Recommendation engine<br/>deterministic rules]
+    F --> G[Claim extraction<br/>usually the model's own list]
+    G --> H[Evidence validation<br/>semantic + retrieval + entailment<br/>entailment asks the model on live runs]
+    C --> I[Contradiction detection<br/>whole record, not top-k<br/>model-declared conflicts advisory only]
+    H --> J[Recommendation engine<br/>deterministic rules, always]
     I --> J
     J --> K[Brief: recommendation, reasons,<br/>concerns, citations]
     K --> L[Adjudicator decides]
@@ -77,7 +77,21 @@ Calls go one direction only. Nothing skips a layer.
 7. Run the rules. They decide the state.
 8. Persist the brief, the claims, the evidence links and the metrics, and write the audit events.
 
-Steps 1 and 3 through 8 are deterministic. Only step 2 is the model.
+With fixtures, step 2 is the only place a model appears. On a live run there are three more, and
+it is worth being precise about them.
+
+Claim extraction is usually not a model call at all: if the draft already carries its claims, they
+are used as they are. Only when it does not, and a live provider is configured, is a second call
+made to split the prose.
+
+Evidence validation swaps the entailment signal for a model verdict on a live run. The other two
+signals stay as code, so no claim is ever scored by the model alone.
+
+Contradiction detection always folds in conflicts the model declared in its own output, and a live
+run adds a separate contradiction pass. Both are advisory. Neither can escalate a case.
+
+Step 7 is code in every mode. The rules decide the state, and nothing the model says reaches that
+decision except as an input the rules weigh.
 
 ### Where the model stops
 

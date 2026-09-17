@@ -1853,7 +1853,7 @@ ACTIVE_SLUGS = {
     "hannah_ostrowski",   # PROCEED  — clean package
     "jordan_reyes",       # REQUEST  — disclosed discrepancy, one month unverified
     "elena_vasquez",      # ESCALATE — two records disagree on a material fact
-    "marcus_dell",        # ESCALATE — unmitigated finance; model/engine divergence
+    "marcus_dell",        # ESCALATE — undisclosed foreign travel; model/engine divergence
 }
 
 RESERVE_SLUGS = {

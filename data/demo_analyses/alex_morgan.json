@@ -1,0 +1,272 @@
+{
+  "executive_summary": "The case file documents one financial issue and one related continuous-monitoring alert, both traceable to a single originating account. An $18,500 delinquent account with Meridian Regional Health Services was first reported delinquent on February 4, 2026. The applicant states the balance arose from disputed medical billing following a partial insurance denial, and the file contains a structured repayment agreement with an effective date of March 14, 2026 at $325 per month, with two payments received and none missed as of May 1, 2026. A continuous-monitoring alert generated May 2, 2026 references the same creditor and account reference as the February report; investigator notes assess it as the same underlying account rather than a separate delinquency. Foreign travel to Germany and Singapore was disclosed and is consistent with border-crossing record checks. The outcome of the applicant's billing dispute is not in the record. This summary is informational and is not a determination; all findings require human verification.",
+  "key_findings": [
+    {
+      "finding": "A single delinquent account of $18,500 with Meridian Regional Health Services was first reported delinquent on February 4, 2026.",
+      "category": "financial",
+      "severity": "high",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "A structured repayment agreement effective March 14, 2026 is documented, with two scheduled payments received and no missed payments as of May 1, 2026.",
+      "category": "financial_mitigation",
+      "severity": "low",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "The May 2, 2026 continuous-monitoring alert references the same creditor and account reference as the February 2026 financial report and may not represent a separate issue.",
+      "category": "monitoring",
+      "severity": "moderate",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "No adverse information was developed for criminal history, employment verification, residence verification or foreign contact reporting during the period under review.",
+      "category": "general",
+      "severity": "informational",
+      "source_ids": [
+        "DOC-1-CHUNK-1"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_text": "A delinquent account of $18,500 with Meridian Regional Health Services was first reported delinquent on February 4, 2026.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "claim_text": "The account was 121 days past due at the time of reporting and had been referred to a third-party collection agent.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "The applicant states the debt resulted from disputed medical billing after an insurer denied part of a 2025 claim.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "The applicant filed a written billing dispute with the creditor in December 2025.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0",
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "claim_text": "The applicant entered a structured repayment plan with an effective date of March 14, 2026.",
+      "claim_type": "mitigation",
+      "source_ids": [
+        "DOC-4-CHUNK-0",
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "claim_text": "The agreed monthly payment under the repayment plan is $325.00, paid by automatic debit.",
+      "claim_type": "mitigation",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "Two scheduled payments were received in March and April 2026 and no payments have been missed as of May 1, 2026.",
+      "claim_type": "mitigation",
+      "source_ids": [
+        "DOC-4-CHUNK-0",
+        "DOC-8-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "Six additional trade lines are reported as current with no delinquency over the prior 24 months.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-1"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "claim_text": "A continuous-monitoring alert generated on May 2, 2026 references the same creditor and account reference as the February 2026 financial report.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "claim_text": "The investigator assessed the monitoring alert as reflecting the same underlying account rather than a second, separate delinquency.",
+      "claim_type": "mitigation",
+      "source_ids": [
+        "DOC-8-CHUNK-0"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "claim_text": "The applicant disclosed foreign travel to Germany in September 2025 and to Singapore in November 2025.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "Border-crossing record checks identified no foreign travel beyond the two disclosed trips during the rolling 24-month period.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "Employment dates reported by the applicant match the dates confirmed by both employers of record, with no unexplained gaps.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "The applicant's insurer has since reversed the denial and reimbursed the disputed medical charges in full.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.55
+    }
+  ],
+  "mitigating_information": [
+    "The debt was self-reported by the applicant on the security questionnaire before it was identified through record checks (Case Notes).",
+    "A structured repayment agreement is in place and is being paid as agreed, with zero missed payments recorded (Payment Plan Document).",
+    "The balance originates from a single disputed medical account rather than a pattern of financial irresponsibility; all other trade lines are current (Financial Report)."
+  ],
+  "missing_information": [
+    "The outcome of the applicant's billing dispute with the originating creditor is not in the record.",
+    "No itemised statement from the creditor substantiating the disputed service charges is present in the file.",
+    "Payment history after May 1, 2026 has not been refreshed in the case material."
+  ],
+  "potential_conflicts": [],
+  "requires_human_review": true,
+  "proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+  "proposed_concern_level": "LOW",
+  "executive_case_assessment": "The completed investigation identified one material financial concern: an $18,500 delinquent account with Meridian Regional Health Services, first reported delinquent on February 4, 2026. The applicant disclosed the debt before record checks identified it, attributed it to disputed medical billing following a partial insurance denial, and the package contains a structured repayment agreement effective March 14, 2026 at $325 per month with two payments received and none missed as of May 1, 2026. Employment, foreign travel, residence and criminal-history records were consistent with the applicant's disclosures. The one continuous-monitoring alert in the package references the same creditor and account reference as the original finding and the investigator assessed it as the same underlying account. No unresolved contradictory information was identified. The evidence supports proceeding to standard review. The final decision belongs to the adjudicator.",
+  "why_this_recommendation": [
+    {
+      "reason": "The single financial concern has documented, independently verified mitigation.",
+      "category": "financial",
+      "importance": "high",
+      "source_ids": [
+        "DOC-4-CHUNK-0",
+        "DOC-8-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The applicant's explanation is consistent with the creditor's own file annotation recording the account as in dispute.",
+      "category": "financial",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-3-CHUNK-0",
+        "DOC-2-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The repayment plan is corroborated by the servicer, not only asserted by the applicant.",
+      "category": "financial",
+      "importance": "high",
+      "source_ids": [
+        "DOC-8-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "Employment dates reported by the applicant match the dates confirmed by both employers of record.",
+      "category": "employment",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "Disclosed foreign travel matches border-crossing records with no undisclosed trips identified.",
+      "category": "foreign_travel",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The later monitoring alert relates to the already-disclosed account rather than to new activity.",
+      "category": "monitoring",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-7-CHUNK-0",
+        "DOC-8-CHUNK-0"
+      ]
+    }
+  ],
+  "factor_details": [
+    {
+      "factor": "The applicant self-reported the debt on the security questionnaire before record checks identified it.",
+      "category": "financial",
+      "source_ids": [
+        "DOC-8-CHUNK-0"
+      ]
+    },
+    {
+      "factor": "The repayment agreement is being paid as agreed with zero missed payments recorded.",
+      "category": "financial",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "factor": "All other trade lines are current, so the balance is a single disputed account rather than a pattern.",
+      "category": "financial",
+      "source_ids": [
+        "DOC-2-CHUNK-1"
+      ]
+    }
+  ],
+  "concern_details": [
+    {
+      "concern": "The delinquent account remains technically open pending completion of the repayment plan.",
+      "category": "financial",
+      "severity": "low",
+      "mitigation": "A verified repayment plan is active and paying as agreed.",
+      "human_review_consideration": "Confirm the repayment arrangement remains current at the time of adjudication.",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "concern": "The outcome of the applicant's billing dispute with the originating creditor is not in the record.",
+      "category": "financial",
+      "severity": "low",
+      "mitigation": "The dispute does not affect the repayment arrangement already in force.",
+      "human_review_consideration": "Consider whether the dispute outcome is needed before the file closes.",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ]
+    }
+  ],
+  "what_could_change_recommendation": [
+    "If the repayment agreement cannot be verified with the servicer.",
+    "If payments after May 1, 2026 were missed.",
+    "If new unresolved financial activity appears in a later monitoring refresh."
+  ]
+}

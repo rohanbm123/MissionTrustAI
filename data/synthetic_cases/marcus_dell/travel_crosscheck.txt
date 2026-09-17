@@ -1,0 +1,26 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+TRAVEL RECORD CROSS-CHECK
+
+Cross-check completed: March 1, 2026
+Subject: Marcus Dell
+
+Border-crossing records for the rolling 24-month period identify five foreign
+trips. Two correspond to the disclosure filed February 6, 2026.
+
+TRIPS NOT APPEARING ON THE DISCLOSURE
+
+1. Destination withheld pending review (Country A)
+   Dates: July 8-19, 2025
+   Duration: 11 days
+
+2. Destination withheld pending review (Country A)
+   Dates: November 2-13, 2025
+   Duration: 11 days
+
+3. Destination withheld pending review (Country B)
+   Dates: January 6-10, 2026
+   Duration: 4 days
+
+Two of the three undisclosed trips were to the same country within a four-month
+period. The combined duration of the undisclosed travel is 26 days.

@@ -1,0 +1,40 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: missiontrust-db
+    environment:
+      POSTGRES_USER: missiontrust
+      POSTGRES_PASSWORD: missiontrust
+      POSTGRES_DB: missiontrust
+    ports:
+      - "5433:5432"
+    volumes:
+      - missiontrust_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U missiontrust -d missiontrust"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    container_name: missiontrust-app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://missiontrust:missiontrust@db:5432/missiontrust
+      # Demo mode needs no API key. To use a live model, set DEMO_MODE=false and
+      # supply LLM_PROVIDER plus the matching key (e.g. in a .env file).
+      DEMO_MODE: "true"
+      LLM_PROVIDER: demo
+      EMBEDDING_PROVIDER: local
+      EMBEDDING_DIM: "512"
+      SEED_ARGS: "--reset --analyse --with-sample-reviews"
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    ports:
+      - "8501:8501"
+
+volumes:
+  missiontrust_pgdata:

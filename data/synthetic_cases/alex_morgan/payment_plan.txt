@@ -1,0 +1,25 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+PAYMENT PLAN DOCUMENT
+
+Servicer: Cascade Recovery Services (fictional)
+Consumer: Alex Morgan
+Reference: MRH-4471-22
+
+STRUCTURED REPAYMENT AGREEMENT
+Plan effective date: March 14, 2026
+Original balance placed: $18,500.00
+Agreed monthly payment: $325.00
+Payment method: Automatic debit, 14th of each month
+Term: 60 months, subject to redetermination if the underlying dispute resolves
+
+PAYMENT HISTORY AS OF MAY 1, 2026
+March 14, 2026 — $325.00 — Received
+April 14, 2026 — $325.00 — Received
+Balance as of May 1, 2026: $17,850.00
+Payments missed to date: 0
+
+NOTES
+The consumer's billing dispute with the originating creditor remains open. This
+agreement does not waive the consumer's dispute rights. The servicer has
+recorded the account as "paying as agreed" for the period covered.

@@ -1,0 +1,68 @@
+{
+  "case_number": "PS-2026-00256",
+  "applicant_name": "Hannah Ostrowski",
+  "slug": "hannah_ostrowski",
+  "status": "Awaiting AI Analysis",
+  "key_signal": "No adverse information developed",
+  "scenario": "clean_case",
+  "opened_on": "2026-03-16",
+  "documents": [
+    {
+      "file": "background_investigation_summary.txt",
+      "document_name": "Background Investigation Summary",
+      "document_type": "investigation_summary"
+    },
+    {
+      "file": "financial_report.txt",
+      "document_name": "Financial Report",
+      "document_type": "financial_report"
+    },
+    {
+      "file": "employment_history.txt",
+      "document_name": "Employment History",
+      "document_type": "employment_history"
+    },
+    {
+      "file": "residence_verification.txt",
+      "document_name": "Residence Verification Record",
+      "document_type": "record_check"
+    },
+    {
+      "file": "travel_disclosure.txt",
+      "document_name": "Foreign Travel Disclosure",
+      "document_type": "travel_disclosure"
+    },
+    {
+      "file": "investigator_notes.txt",
+      "document_name": "Case Notes",
+      "document_type": "case_notes"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-03-16",
+      "label": "Case opened",
+      "detail": "Periodic reinvestigation initiated.",
+      "category": "administrative"
+    },
+    {
+      "date": "2026-04-02",
+      "label": "Record checks completed",
+      "detail": "Financial, criminal and residence checks returned clear.",
+      "category": "investigative"
+    },
+    {
+      "date": "2026-04-18",
+      "label": "Employment verified",
+      "detail": "Both employers of record confirmed reported dates.",
+      "category": "employment"
+    },
+    {
+      "date": "2026-04-30",
+      "label": "Case notes recorded",
+      "detail": "No issues identified for further review.",
+      "category": "investigative"
+    }
+  ],
+  "known_contradictions": []
+}

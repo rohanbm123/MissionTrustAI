@@ -1,0 +1,20 @@
+# --- Core application ---
+streamlit>=1.32
+pandas>=2.0
+numpy>=1.24
+plotly>=5.18
+pydantic>=2.5
+SQLAlchemy>=2.0
+python-dotenv>=1.0
+
+# --- PostgreSQL + pgvector (optional; only needed when DATABASE_URL is postgresql://) ---
+# The app falls back to SQLite + a NumPy cosine index when these are absent.
+psycopg[binary]>=3.1 ; python_version >= "3.10"
+pgvector>=0.2.5
+
+# --- LLM providers (optional; DEMO_MODE runs without any of these) ---
+anthropic>=0.34 ; python_version >= "3.10"
+openai>=1.30 ; python_version >= "3.10"
+
+# --- Testing ---
+pytest>=8.0

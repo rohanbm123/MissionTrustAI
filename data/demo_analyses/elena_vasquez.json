@@ -1,0 +1,165 @@
+{
+  "executive_summary": "The file contains an unresolved conflict about a single fact: the date the applicant's employment with Sterling Grove Manufacturing ended. The employer's payroll system of record states that employment ended June 2023, with the final payroll period ending June 30, 2023 and no payroll activity recorded afterwards. A former supervisor interviewed on March 19, 2026 stated that employment ended September 2023, based on recollection of a project timeline and without documentation. The applicant also reports September 2023 and has requested a separation letter and final pay statements, which are not yet in the record. The approximate three-month discrepancy is unresolved. No other adverse information was developed. This summary is informational and is not a determination.",
+  "key_findings": [
+    {
+      "finding": "Employment end date for Sterling Grove Manufacturing is reported differently by the employer's payroll record (June 2023) and by both the reference and the applicant (September 2023).",
+      "category": "employment",
+      "severity": "high",
+      "source_ids": [
+        "DOC-2-CHUNK-0",
+        "DOC-3-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "No documentary evidence supporting the September 2023 date is present in the file.",
+      "category": "employment",
+      "severity": "moderate",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_text": "The employer's records office reported that employment ended June 2023, with the final payroll period ending June 30, 2023.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "The employer's records office states no payroll activity is recorded for the employee after the June 2023 pay period.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "A former supervisor stated in a March 19, 2026 interview that employment ended September 2023.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "The reference could not produce documentation and stated the recollection was based on memory of a project timeline.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "The applicant reports a September 2023 separation and has requested a separation letter and final pay statements.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "The approximately three-month discrepancy in the separation date is unresolved in the current record.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "The financial record review identified no delinquent accounts and no collections, judgments or liens.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ],
+      "confidence": 0.91
+    }
+  ],
+  "mitigating_information": [
+    "The applicant has requested the documentary records that would resolve the conflict (Applicant Statement).",
+    "No other adverse information was developed during the period under review (Background Investigation Summary)."
+  ],
+  "missing_information": [
+    "The separation letter has not been received.",
+    "Final pay statements have not been received.",
+    "No record explains why the payroll system shows no activity after June 2023 if the applicant worked into September 2023."
+  ],
+  "potential_conflicts": [
+    {
+      "description": "Employment end date is stated as June 2023 by the employer's payroll system of record and as September 2023 by both the reference interview and the applicant.",
+      "source_ids": [
+        "DOC-2-CHUNK-0",
+        "DOC-3-CHUNK-0"
+      ],
+      "conflicting_field": "employment_end_date"
+    }
+  ],
+  "requires_human_review": true,
+  "proposed_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+  "proposed_concern_level": "HIGH",
+  "executive_case_assessment": "The completed investigation contains an unresolved conflict about a single fact: when the applicant's employment with Sterling Grove Manufacturing ended. The employer's payroll system of record states June 2023, with the final payroll period ending June 30, 2023 and no payroll activity recorded afterwards. A former supervisor interviewed on March 19, 2026 stated September 2023, based on recollection of a project timeline and without documentation. The applicant also reports September 2023 and has requested a separation letter and final pay statements, which are not in the package. The approximate three-month discrepancy is unresolved and no document in the package reconciles it. Financial, criminal-history, residence and travel checks returned no adverse information. Two independent records disagree on a material fact.",
+  "why_this_recommendation": [
+    {
+      "reason": "The employer's payroll system of record and the reference interview give different employment end dates for the same position.",
+      "category": "employment",
+      "importance": "high",
+      "source_ids": [
+        "DOC-2-CHUNK-0",
+        "DOC-3-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "No documentary evidence supporting the later date is present in the package.",
+      "category": "employment",
+      "importance": "high",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The employer states no payroll activity is recorded after the June 2023 period, which the September account does not explain.",
+      "category": "employment",
+      "importance": "high",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "No adverse information was developed in any other category.",
+      "category": "documentation",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    }
+  ],
+  "factor_details": [
+    {
+      "factor": "The applicant has requested the separation letter and final pay statements that would resolve the conflict.",
+      "category": "employment",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    }
+  ],
+  "concern_details": [
+    {
+      "concern": "Three sources give two different employment end dates and the conflict is unresolved.",
+      "category": "employment",
+      "severity": "high",
+      "mitigation": "",
+      "human_review_consideration": "Determine which record governs and whether the discrepancy is material to the period under review.",
+      "source_ids": [
+        "DOC-2-CHUNK-0",
+        "DOC-3-CHUNK-0"
+      ]
+    }
+  ],
+  "what_could_change_recommendation": [
+    "If the separation letter or final pay statements were produced.",
+    "If the employer's payroll system were shown to have a recording error.",
+    "If the reference could produce contemporaneous documentation."
+  ]
+}

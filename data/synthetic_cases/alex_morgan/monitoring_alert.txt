@@ -1,0 +1,24 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+CONTINUOUS MONITORING ALERT
+
+Alert ID: CM-2026-77431
+Generated: May 2, 2026, 03:14 UTC
+Subject: Alex Morgan
+Alert category: Financial — adverse account activity
+
+ALERT DETAIL
+An automated record refresh identified a collection account associated with the
+subject. Creditor of record: Meridian Regional Health Services. Account
+reference: MRH-4471-22. Reported balance at refresh: $17,850.00.
+
+CORRELATION
+This alert references the same originating creditor and account reference as the
+delinquency reported in the February 4, 2026 financial report. The alerting
+system does not evaluate mitigation and does not know whether a repayment
+arrangement exists. Analyst correlation is required before this alert is treated
+as a new or separate issue.
+
+DISPOSITION
+Routed to the assigned analyst for correlation with existing case material. No
+automated action was taken. This alert is informational and is not a finding.

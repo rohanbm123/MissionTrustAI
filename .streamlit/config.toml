@@ -1,0 +1,18 @@
+[theme]
+base = "light"
+primaryColor = "#1F3A5F"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F6F9"
+textColor = "#16202E"
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Hides the "Deploy" button and the developer menu. This is a reviewer-facing
+# tool, not a Streamlit authoring surface.
+toolbarMode = "minimal"

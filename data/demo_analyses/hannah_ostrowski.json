@@ -1,0 +1,136 @@
+{
+  "executive_summary": "No issue meeting the threshold for further review was identified during the period covered. The financial report dated April 2, 2026 shows no delinquent accounts, twelve current trade lines, revolving utilisation at 6 percent, and no collections, judgments, liens or bankruptcies. Employment dates reported by the applicant match the dates confirmed by both employers of record with no unexplained gaps, and both reported addresses were verified through lease and utility records. One foreign trip to Canada in July 2025 was disclosed and matches border-crossing records, with no undisclosed travel identified. Two developed references corroborated the applicant's residence and employment history. This summary is informational and is not a determination.",
+  "key_findings": [
+    {
+      "finding": "No issue meeting the threshold for further review was identified.",
+      "category": "general",
+      "severity": "informational",
+      "source_ids": [
+        "DOC-1-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "All reported information was corroborated by at least one independent source.",
+      "category": "general",
+      "severity": "informational",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_text": "No delinquent accounts are reported and twelve trade lines are current.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "Revolving credit utilisation is reported at 6 percent.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "Employment dates reported by the applicant match the dates confirmed by both employers with no unexplained gaps.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "Both reported addresses were verified and residence history is continuous with no unverified periods.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "One foreign trip to Canada in July 2025 was disclosed and is consistent with border-crossing records.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "No undisclosed foreign travel was identified during the rolling 24-month period.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "Two developed references corroborated the applicant's residence and employment history.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ],
+      "confidence": 0.92
+    }
+  ],
+  "mitigating_information": [],
+  "missing_information": [
+    "Education verification results are referenced in the investigation summary but the underlying verification record is not included in this file."
+  ],
+  "potential_conflicts": [],
+  "requires_human_review": true,
+  "proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+  "proposed_concern_level": "NONE",
+  "executive_case_assessment": "The completed investigation identified no issue meeting the threshold for further review. The financial report dated April 2, 2026 shows no delinquent accounts, twelve current trade lines with no 30-day or greater delinquency in the prior 84 months, revolving utilisation at 6 percent, and no collections, judgments, liens or bankruptcies. Employment dates reported by the applicant match the dates confirmed by both employers of record with no unexplained gaps, and both reported addresses were verified through lease and utility records with no unverified periods. One foreign trip to Canada in July 2025 was disclosed and matches border-crossing records, with no undisclosed travel identified and no foreign contacts, financial interests or property reported. Two developed references corroborated the applicant's residence and employment history. Every reported item was corroborated by an independent source.",
+  "why_this_recommendation": [
+    {
+      "reason": "No issue meeting the threshold for further review was identified in any category.",
+      "category": "documentation",
+      "importance": "high",
+      "source_ids": [
+        "DOC-1-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "All reported information was corroborated by at least one independent source.",
+      "category": "documentation",
+      "importance": "high",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The financial record shows no delinquency in the prior 84 months and 6 percent utilisation.",
+      "category": "financial",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "Residence history is continuous and fully verified with no unverified periods.",
+      "category": "identity_background",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    }
+  ],
+  "factor_details": [
+    {
+      "factor": "Two developed references corroborated the applicant's residence and employment history.",
+      "category": "identity_background",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    }
+  ],
+  "concern_details": [],
+  "what_could_change_recommendation": [
+    "If the education verification record referenced in the summary could not be produced.",
+    "If new adverse activity appeared in a later monitoring refresh."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "executive_summary": "Border-crossing records identify five foreign trips over the rolling 24-month period; the applicant disclosed two. Three trips totalling 26 days were not reported, two of them to the same country within a four-month window. A continuing foreign contact employed by a state-owned enterprise in that country, recorded on at least eleven occasions, appears on no filing by the applicant and was identified through record review. The applicant states the trips were employer-arranged and reported on his behalf; the employer's records office has no record of arranging or reimbursing any travel for him in the period. Financial, criminal-history, employment and residence checks returned no adverse information. The reporting failures are established and no mitigating documentation has been provided.",
+  "key_findings": [
+    {
+      "finding": "Three foreign trips totalling 26 days were not disclosed by the applicant.",
+      "category": "foreign_travel",
+      "severity": "high",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "A continuing foreign contact employed by a state-owned enterprise was not reported and was identified through record review.",
+      "category": "foreign_travel",
+      "severity": "high",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "The applicant's explanation that the travel was employer-arranged is not corroborated by the employer.",
+      "category": "foreign_travel",
+      "severity": "high",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "Financial, criminal-history, employment and residence checks returned no adverse information.",
+      "category": "general",
+      "severity": "informational",
+      "source_ids": [
+        "DOC-1-CHUNK-1"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_text": "Border-crossing records identify five foreign trips during the rolling 24-month period while the applicant disclosed two.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "Three foreign trips totalling 26 days were not disclosed by the applicant.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "Two of the undisclosed trips were to the same country within a four-month period.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "A continuing foreign contact employed by a state-owned enterprise was identified through record review and appears on no filing by the applicant.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "The contact was recorded on at least eleven occasions between July 2025 and January 2026.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "The applicant states the undisclosed trips were arranged through his employer and reported on his behalf.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "The employer's records office states it has no record of sponsoring, arranging or reimbursing any travel for the applicant during the period.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "The investigator recorded that the applicant's explanation is not corroborated by the employer.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "The applicant reported no continuing foreign national contacts on his travel disclosure.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "claim_text": "Employment dates reported by the applicant match the dates confirmed by both employers with no unexplained gaps.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "Financial and criminal-history checks returned no adverse information for the period covered.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-1-CHUNK-1"
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "mitigating_information": [
+    "The applicant responded to the questions and offered to provide further detail (Applicant Statement).",
+    "No adverse information was developed in financial, criminal-history, employment or residence checks (Background Investigation Summary)."
+  ],
+  "missing_information": [
+    "No employer travel record, itinerary or reimbursement record supporting the applicant's account has been provided.",
+    "The nature and full extent of the contact with the foreign national has not been established.",
+    "The purpose of the three undisclosed trips is not documented."
+  ],
+  "potential_conflicts": [],
+  "requires_human_review": true,
+  "proposed_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+  "proposed_concern_level": "MODERATE",
+  "executive_case_assessment": "The completed investigation identified unreported foreign travel and an unreported foreign contact. Border-crossing records show five trips over the rolling 24-month period against two disclosed; the three undisclosed trips total 26 days, and two of them were to the same country within a four-month window. A continuing contact with a foreign national employed by a state-owned enterprise in that country, recorded on at least eleven occasions between July 2025 and January 2026, appears on no filing by the applicant and was identified through record review rather than disclosure. The applicant attributes the omissions to a belief that employer-arranged travel was reported on his behalf; the employer's records office has no record of arranging or reimbursing any travel for him in the period, so the explanation is uncorroborated. Financial, criminal-history, employment and residence checks returned no adverse information. The final decision belongs to the adjudicator.",
+  "why_this_recommendation": [
+    {
+      "reason": "Three foreign trips totalling 26 days were not reported, and were identified only by record check.",
+      "category": "foreign_travel",
+      "importance": "high",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "A continuing contact with a foreign national employed by a state-owned enterprise was never reported by the applicant.",
+      "category": "foreign_travel",
+      "importance": "high",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The applicant's explanation that the travel was employer-arranged is contradicted by the employer's own records office.",
+      "category": "foreign_travel",
+      "importance": "high",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "No mitigating documentation of any kind has been provided for either the travel or the contact.",
+      "category": "foreign_travel",
+      "importance": "high",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "All other categories are clean: financial, criminal-history, employment and residence checks returned no adverse information.",
+      "category": "documentation",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-1-CHUNK-1"
+      ]
+    }
+  ],
+  "factor_details": [
+    {
+      "factor": "The applicant responded to the questions put to him and offered to provide further detail.",
+      "category": "documentation",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ]
+    },
+    {
+      "factor": "Employment dates match the dates confirmed by both employers with no unexplained gaps.",
+      "category": "employment",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    }
+  ],
+  "concern_details": [
+    {
+      "concern": "Three foreign trips totalling 26 days were not disclosed and surfaced only through record check.",
+      "category": "foreign_travel",
+      "severity": "high",
+      "mitigation": "",
+      "human_review_consideration": "Establish the purpose of each undisclosed trip and who arranged it.",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ]
+    },
+    {
+      "concern": "A continuing foreign contact employed by a state-owned enterprise was never reported.",
+      "category": "foreign_travel",
+      "severity": "high",
+      "mitigation": "",
+      "human_review_consideration": "Establish the nature, duration and extent of the contact before adjudication.",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "concern": "The applicant's account of employer-arranged travel is not supported by the employer.",
+      "category": "foreign_travel",
+      "severity": "high",
+      "mitigation": "",
+      "human_review_consideration": "Ask the applicant to produce itineraries or reimbursement records.",
+      "source_ids": [
+        "DOC-7-CHUNK-0"
+      ]
+    }
+  ],
+  "what_could_change_recommendation": [
+    "If employer travel records, itineraries or reimbursements supporting the applicant's account were produced.",
+    "If the foreign contact were shown to have no state-enterprise employment.",
+    "If the purpose of each undisclosed trip were documented and independently verified."
+  ]
+}

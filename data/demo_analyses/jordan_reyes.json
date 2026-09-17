@@ -1,0 +1,186 @@
+{
+  "executive_summary": "The case file documents an employment-history discrepancy that is partially, but not fully, reconciled. The applicant reported a January 2021 start date with Vantage Analytics Partners; the employer's records office confirms a permanent start date of July 12, 2021. A staffing agency record shows a contract placement with the same client running February 8, 2021 to July 9, 2021, converting to direct employment on July 12, 2021, which is consistent with the applicant's explanation that the reported date reflected when the work began rather than when employment status changed. Approximately one month between the reported January start and the February 8 assignment start remains unexplained in the record. No other adverse information was developed. This summary is informational and is not a determination.",
+  "key_findings": [
+    {
+      "finding": "Reported and employer-confirmed start dates for Vantage Analytics Partners differ by approximately six months.",
+      "category": "employment",
+      "severity": "moderate",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "A staffing agency record accounts for most of the difference through a contract-to-permanent conversion.",
+      "category": "employment_mitigation",
+      "severity": "low",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "finding": "Approximately one month of the reported period remains unverified by any record in the file.",
+      "category": "employment",
+      "severity": "moderate",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_text": "The applicant reported a start date of January 2021 for Vantage Analytics Partners.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "claim_text": "The employer's records office confirmed a permanent employment start date of July 12, 2021.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "The applicant states the role began as a contract placement through a staffing agency and converted to permanent employment in July 2021.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-3-CHUNK-0"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "claim_text": "The staffing agency record shows an assignment start date of February 8, 2021 and an end date of July 9, 2021.",
+      "claim_type": "mitigation",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "claim_text": "The staffing agency has no record of any placement of the applicant with this client during January 2021.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "claim_text": "The investigator recorded that one month of the reported period remains unreconciled.",
+      "claim_type": "potential_concern",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "claim_text": "The financial record review identified no delinquent accounts, collections, judgments or liens.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "claim_text": "Employment dates for Fairmont Logistics Group as reported by the applicant match the dates confirmed by that employer.",
+      "claim_type": "fact",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "mitigating_information": [
+    "The applicant volunteered an explanation before the agency record was obtained, and the record substantiates the substance of that explanation (Applicant Statement; Staffing Agency Record).",
+    "The investigator recorded that no information developed suggests a deliberate misstatement (Case Notes)."
+  ],
+  "missing_information": [
+    "No record accounts for the period between the reported January 2021 start and the February 8, 2021 assignment start.",
+    "No payroll or timesheet record for January 2021 is present in the file."
+  ],
+  "potential_conflicts": [
+    {
+      "description": "Three different start dates appear in the record for the same position: January 2021 (applicant), February 8, 2021 (staffing agency) and July 12, 2021 (employer).",
+      "source_ids": [
+        "DOC-2-CHUNK-0",
+        "DOC-4-CHUNK-0"
+      ],
+      "conflicting_field": "employment_start_date"
+    }
+  ],
+  "requires_human_review": true,
+  "proposed_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+  "proposed_concern_level": "MODERATE",
+  "executive_case_assessment": "The completed investigation identified one employment discrepancy that is partially, but not fully, reconciled. The applicant reported a January 2021 start date with Vantage Analytics Partners; the employer's records office confirms a permanent start date of July 12, 2021. A staffing agency record shows a contract placement with the same client from February 8, 2021 to July 9, 2021, converting to direct employment on July 12, 2021, which corroborates the applicant's explanation that the reported date reflected when the work began rather than when employment status changed. Approximately one month between the reported January start and the February 8 assignment start is accounted for by no record in the package, and the agency states it holds no placement for that month. Financial, criminal-history, residence and travel checks returned no adverse information. The residual gap is a documentation question rather than an adverse finding.",
+  "why_this_recommendation": [
+    {
+      "reason": "A third-party staffing record reconciles most of the reported discrepancy and corroborates the applicant's account.",
+      "category": "employment",
+      "importance": "high",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "One month of claimed employment is corroborated by no record in the package and the agency states it holds none.",
+      "category": "employment",
+      "importance": "high",
+      "source_ids": [
+        "DOC-4-CHUNK-0",
+        "DOC-5-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "The investigator recorded that no information developed suggests a deliberate misstatement.",
+      "category": "employment",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-5-CHUNK-0"
+      ]
+    },
+    {
+      "reason": "No adverse information was developed in any other category.",
+      "category": "documentation",
+      "importance": "moderate",
+      "source_ids": [
+        "DOC-6-CHUNK-0"
+      ]
+    }
+  ],
+  "factor_details": [
+    {
+      "factor": "The applicant volunteered the explanation before the agency record was obtained, and the record substantiates it.",
+      "category": "employment",
+      "source_ids": [
+        "DOC-3-CHUNK-0",
+        "DOC-4-CHUNK-0"
+      ]
+    },
+    {
+      "factor": "Employment dates for the earlier employer match the dates that employer confirmed.",
+      "category": "employment",
+      "source_ids": [
+        "DOC-2-CHUNK-0"
+      ]
+    }
+  ],
+  "concern_details": [
+    {
+      "concern": "Approximately one month of reported employment is unverified by any record in the package.",
+      "category": "employment",
+      "severity": "moderate",
+      "mitigation": "The surrounding period is fully corroborated by the staffing agency record.",
+      "human_review_consideration": "Request payroll or timesheet evidence for January 2021 before closing the discrepancy.",
+      "source_ids": [
+        "DOC-4-CHUNK-0"
+      ]
+    }
+  ],
+  "what_could_change_recommendation": [
+    "If a January 2021 payroll or timesheet record is produced.",
+    "If the staffing agency record could not be authenticated.",
+    "If further unexplained employment gaps were identified."
+  ]
+}

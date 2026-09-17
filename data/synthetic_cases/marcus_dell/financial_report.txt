@@ -1,0 +1,18 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+FINANCIAL REPORT
+
+Report Date: 2026-04-20
+Subject: Marcus Dell
+Source: Consolidated consumer credit file (synthetic)
+
+DELINQUENT ACCOUNTS
+1. Kestrel Auto Finance — $4,220.00 — First reported delinquent March 2026
+2. Pinewood Property Management — $2,860.00 — First reported delinquent April 2026
+
+Total delinquent balance: $7,080.00
+Accounts 90+ days past due: 2
+Revolving utilisation: 91 percent
+
+No bankruptcies, judgments, liens or civil filings appear in the record. Four
+additional trade lines are reported as current.

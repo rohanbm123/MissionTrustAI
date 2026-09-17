@@ -1,0 +1,128 @@
+{
+  "description": "Controlled evidence variants of the synthetic cases. Each mutation adds or removes documents or history events from a completed package and states the recommendation the system should reach. Material mutations must move the recommendation; immaterial ones must not. FICTIONAL DEMONSTRATION DATA.",
+  "mutations": [
+    {
+      "id": "alex_m1_remove_repayment_evidence",
+      "base_slug": "alex_morgan",
+      "label": "Remove all repayment-plan evidence",
+      "kind": "removal_material",
+      "hypothesis": "Both documents that evidence the repayment plan are gone, so the mitigation that justifies proceeding is asserted but no longer verifiable anywhere in the package.",
+      "remove": [
+        "payment_plan.txt",
+        "investigator_notes.txt"
+      ],
+      "add": [],
+      "expected_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "remove_events": []
+    },
+    {
+      "id": "alex_m2_add_contradictory_financial_record",
+      "base_slug": "alex_morgan",
+      "label": "Add a contradictory financial record",
+      "kind": "contradiction",
+      "hypothesis": "Two independent records now disagree on the delinquency amount and date, and nothing in the package resolves it.",
+      "remove": [],
+      "add": [
+        {
+          "file": "revised_financial_report.txt",
+          "document_name": "Revised Financial Report",
+          "document_type": "financial_report",
+          "text": "FICTIONAL DEMONSTRATION DATA \u2014 NOT A REAL CASE RECORD\n\nREVISED FINANCIAL REPORT\n========================\n\nReport Date: 2026-05-20\nSubject: Alex Morgan\nSource: Consolidated consumer credit file, second pull (synthetic)\n\nDELINQUENT ACCOUNT\nCreditor: Meridian Regional Health Services\nAccount reference: MRH-4471-22\nBalance reported delinquent: $24,900.00\nDate first reported delinquent: November 2025\nDays past due at reporting: 212\nAccount status at reporting: Referred to third-party collection agent\n\nRECONCILIATION NOTE\nThis pull reports a different balance and a different first-delinquency date for the same\ncreditor and the same account reference as the February 2026 report. The bureau has not\nexplained the difference. The two reports have not been reconciled.\n"
+        }
+      ],
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "remove_events": []
+    },
+    {
+      "id": "alex_m3_remove_irrelevant_travel_document",
+      "base_slug": "alex_morgan",
+      "label": "Remove a document no material reason depends on",
+      "kind": "immaterial",
+      "hypothesis": "Travel raised no concern in this case, so removing its document must not move a financially-driven recommendation.",
+      "remove": [
+        "travel_disclosure.txt"
+      ],
+      "add": [],
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "remove_events": []
+    },
+    {
+      "id": "alex_m4_add_benign_document",
+      "base_slug": "alex_morgan",
+      "label": "Add an unrelated benign document",
+      "kind": "immaterial",
+      "hypothesis": "Adding a clean, unrelated record must not move the recommendation in either direction.",
+      "remove": [],
+      "add": [
+        {
+          "file": "education_verification.txt",
+          "document_name": "Education Verification",
+          "document_type": "record_check",
+          "text": "FICTIONAL DEMONSTRATION DATA \u2014 NOT A REAL CASE RECORD\n\nEDUCATION VERIFICATION\n======================\n\nVerification completed: 2026-03-04\nSubject: Alex Morgan\n\nDegree awarded: Bachelor of Science, Information Systems\nInstitution: Ridgeway State University (fictional)\nDates attended: September 2014 to May 2018\nVerification source: Institution registrar of record\n\nThe dates and credential reported by the subject match the institution's record. No\ndiscrepancy was identified and no adverse information was developed.\n"
+        }
+      ],
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "remove_events": []
+    },
+    {
+      "id": "elena_m1_remove_conflicting_reference",
+      "base_slug": "elena_vasquez",
+      "label": "Remove one of several records attesting the conflict",
+      "kind": "immaterial",
+      "hypothesis": "The September 2023 date is attested by both the reference interview and the applicant statement, so removing one of them must not make the conflict go away.",
+      "remove": [
+        "reference_interview.txt"
+      ],
+      "add": [],
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "remove_events": []
+    },
+    {
+      "id": "priya_m1_remove_amended_disclosure",
+      "base_slug": "priya_nandakumar",
+      "label": "Remove all evidence of the amended travel disclosure",
+      "kind": "removal_material",
+      "hypothesis": "The correction is what makes this case proceedable. Every record attesting it must go \u2014 both documents and the history event \u2014 because a fact attested in several places survives the removal of one.",
+      "remove": [
+        "amended_disclosure.txt",
+        "investigator_notes.txt"
+      ],
+      "add": [],
+      "expected_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "remove_events": [
+        "Amended disclosure submitted"
+      ]
+    },
+    {
+      "id": "hannah_m1_add_benign_document",
+      "base_slug": "hannah_ostrowski",
+      "label": "Add an unrelated benign document to a clean case",
+      "kind": "immaterial",
+      "hypothesis": "A clean package plus one more clean document is still a clean package.",
+      "remove": [],
+      "add": [
+        {
+          "file": "education_verification.txt",
+          "document_name": "Education Verification",
+          "document_type": "record_check",
+          "text": "FICTIONAL DEMONSTRATION DATA \u2014 NOT A REAL CASE RECORD\n\nEDUCATION VERIFICATION\n======================\n\nVerification completed: 2026-04-06\nSubject: Hannah Ostrowski\n\nDegree awarded: Bachelor of Arts, Public Administration\nInstitution: Fairhaven College (fictional)\nDates attended: August 2013 to May 2017\nVerification source: Institution registrar of record\n\nThe dates and credential reported by the subject match the institution's record. No\ndiscrepancy was identified and no adverse information was developed.\n"
+        }
+      ],
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "remove_events": []
+    },
+    {
+      "id": "marcus_m1_remove_clean_employment_record",
+      "base_slug": "marcus_dell",
+      "label": "Remove an unrelated clean record",
+      "kind": "immaterial",
+      "hypothesis": "The travel and contact findings are established by their own records, so removing a clean employment record must not de-escalate the case.",
+      "remove": [
+        "employment_history.txt"
+      ],
+      "add": [],
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "remove_events": []
+    }
+  ]
+}

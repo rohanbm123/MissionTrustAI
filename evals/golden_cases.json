@@ -1,0 +1,122 @@
+{
+  "cases": [
+    {
+      "slug": "alex_morgan",
+      "case_id": "PS-2026-00182",
+      "applicant_name": "Alex Morgan",
+      "scenario": "financial_delinquency_with_mitigation",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_concern_level": "LOW",
+      "rationale": "A single financial concern with independently verified mitigation and no unresolved conflict.",
+      "critical_evidence": [
+        "payment_plan.txt",
+        "financial_report.txt",
+        "applicant_statement.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "March 14, 2026",
+        "$18,500",
+        "$325.00",
+        "repayment"
+      ],
+      "expected_reason_topics": [
+        "financial",
+        "monitoring",
+        "employment",
+        "foreign_travel"
+      ]
+    },
+    {
+      "slug": "jordan_reyes",
+      "case_id": "PS-2026-00194",
+      "applicant_name": "Jordan Reyes",
+      "scenario": "employment_discrepancy",
+      "expected_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "expected_concern_level": "MODERATE",
+      "rationale": "A documented discrepancy mostly reconciled by a third-party record, with one month corroborated by nothing.",
+      "critical_evidence": [
+        "staffing_agency_record.txt",
+        "employment_history.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "February 8, 2021",
+        "July 12, 2021",
+        "January 2021"
+      ],
+      "expected_reason_topics": [
+        "employment"
+      ]
+    },
+    {
+      "slug": "marcus_dell",
+      "case_id": "PS-2026-00217",
+      "applicant_name": "Marcus Dell",
+      "scenario": "undisclosed_foreign_travel",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "expected_concern_level": "HIGH",
+      "rationale": "Unreported foreign travel and an unreported foreign contact, with an explanation the employer does not support and no mitigating documentation.",
+      "critical_evidence": [
+        "travel_crosscheck.txt",
+        "foreign_contact_review.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "five foreign trips",
+        "state-owned enterprise",
+        "no record of sponsoring"
+      ],
+      "expected_reason_topics": [
+        "foreign_travel",
+        "documentation"
+      ]
+    },
+    {
+      "slug": "elena_vasquez",
+      "case_id": "PS-2026-00225",
+      "applicant_name": "Elena Vasquez",
+      "scenario": "conflicting_employment_dates",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "expected_concern_level": "HIGH",
+      "rationale": "Two independent records disagree on a material fact and nothing in the package resolves it.",
+      "critical_evidence": [
+        "employer_verification.txt",
+        "reference_interview.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "June 2023",
+        "September 2023",
+        "final payroll"
+      ],
+      "expected_reason_topics": [
+        "employment"
+      ]
+    },
+    {
+      "slug": "hannah_ostrowski",
+      "case_id": "PS-2026-00256",
+      "applicant_name": "Hannah Ostrowski",
+      "scenario": "clean_case",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_concern_level": "NONE",
+      "rationale": "No issue meeting the threshold for further review in any category.",
+      "critical_evidence": [
+        "financial_report.txt",
+        "residence_verification.txt",
+        "employment_history.txt"
+      ],
+      "critical_evidence_terms": [
+        "No delinquent accounts",
+        "6 percent",
+        "no unverified periods"
+      ],
+      "expected_reason_topics": [
+        "documentation",
+        "financial",
+        "identity_background"
+      ]
+    }
+  ]
+}

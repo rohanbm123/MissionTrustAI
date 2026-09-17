@@ -1,0 +1,26 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+CONTINUOUS MONITORING ALERT LOG
+
+Subject: Marcus Dell
+Alert log covering February 2026 through April 2026
+
+ALERT CM-81002 — February 6, 2026 — Category: Financial
+Revolving credit utilisation crossed the configured threshold, reported at 91
+percent across four trade lines. Informational; no automated action taken.
+
+ALERT CM-81455 — March 1, 2026 — Category: Financial
+New collection account reported. Creditor: Kestrel Auto Finance (fictional).
+Balance: $4,220.00.
+
+ALERT CM-81799 — March 22, 2026 — Category: Address
+A data provider reported a change of residential address. No adverse content.
+Routed for reconciliation against the subject's reported address history.
+
+ALERT CM-82310 — April 17, 2026 — Category: Financial
+New collection account reported. Creditor: Pinewood Property Management
+(fictional). Balance: $2,860.00. This account is distinct from the account in
+alert CM-81455.
+
+The alerting system does not evaluate mitigation. Analyst correlation is
+required before any alert is treated as a finding.

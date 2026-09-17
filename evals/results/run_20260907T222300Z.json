@@ -1,0 +1,2697 @@
+{
+  "run_id": "20260907T222300Z",
+  "label": "",
+  "generated_at": "2026-09-07T22:23:00.005813Z",
+  "demo_mode": true,
+  "model": "demo-fixture-v1",
+  "prompt_version": "FINAL_CASE_ASSESSMENT_V1",
+  "summary": {
+    "golden_cases": 5,
+    "mutation_cases": 7,
+    "recommendation_accuracy": 1.0,
+    "concern_level_accuracy": 1.0,
+    "recommendation_groundedness": 0.9714,
+    "unsupported_recommendation_rate": 0.0,
+    "critical_evidence_recall": 0.9333,
+    "citation_precision": 1.0,
+    "citation_recall": 0.6833,
+    "reason_coverage": 0.9,
+    "mutation_accuracy": 1.0,
+    "contradiction_sensitivity": 1.0,
+    "missing_information_sensitivity": 1.0,
+    "recommendation_stability_score": 1.0,
+    "material_evidence_sensitivity_score": 1.0,
+    "human_agreement_rate": 0.8
+  },
+  "golden": [
+    {
+      "slug": "alex_morgan",
+      "case_id": "PS-2026-00182",
+      "applicant_name": "Alex Morgan",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_concern_level": "LOW",
+      "critical_evidence": [
+        "payment_plan.txt",
+        "financial_report.txt",
+        "applicant_statement.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "March 14, 2026",
+        "$18,500",
+        "$325.00",
+        "repayment"
+      ],
+      "expected_reason_topics": [
+        "financial",
+        "monitoring",
+        "employment",
+        "foreign_travel"
+      ],
+      "actual_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "concern_level": "LOW",
+      "confidence": 0.8314,
+      "material_unresolved_issues": 0,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "The single financial concern has documented, independently verified mitigation.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0",
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "The applicant's explanation is consistent with the creditor's own file annotation recording the account as in dispute.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0",
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.96
+        },
+        {
+          "reason": "The repayment plan is corroborated by the servicer, not only asserted by the applicant.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "Employment dates reported by the applicant match the dates confirmed by both employers of record.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-1",
+            "DOC-1-CHUNK-1"
+          ],
+          "verification_score": 0.87
+        },
+        {
+          "reason": "Disclosed foreign travel matches border-crossing records with no undisclosed trips identified.",
+          "category": "foreign_travel",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 0.8992
+        },
+        {
+          "reason": "The later monitoring alert relates to the already-disclosed account rather than to new activity.",
+          "category": "monitoring",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-7-CHUNK-0",
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8625,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.87,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4433,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6359,
+          "document_name": "Foreign Travel Disclosure"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5778,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8122,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.5415,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8423,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.3709,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8588,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7592,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.6589,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8269,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4304,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "EVT-2026-05-02-001",
+          "resolved": true,
+          "relevance": 0.3608,
+          "document_name": "Continuous monitoring alert"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.9028,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8053,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5778,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "background_investigation_summary.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "monitoring_alert.txt",
+        "payment_plan.txt",
+        "travel_disclosure.txt"
+      ],
+      "evidence_texts": [
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health",
+        "Date first reported delinquent: February 4, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "No unexplained gaps in employment exceeding 30 days were identified for the period under review. The dates reported by the subject on the security questionnaire match the dates confirmed by both employers of record.",
+        "Employment history was verified with two employers of record. Residence history was verified for three addresses over the seven-year period with no unexplained gaps.",
+        "REPORTED FOREIGN TRAVEL (rolling 24 months) Dates: September 8-16, 2025",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The consumer's dispute was filed with the creditor on December 9, 2025.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "2026-03-14 \u2014 Repayment plan effective. Structured repayment agreement begins; $325 monthly.",
+        "Agreed monthly payment: $325.00",
+        "2026-03-14 \u2014 Repayment plan effective.",
+        "PAYMENT HISTORY AS OF MAY 1, 2026 March 14, 2026 \u2014 $325.00 \u2014 Received",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule. The servicer confirmed no missed payments as of the date of contact.",
+        "rch 14, 2026 and two payments received on schedule.",
+        "In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "Reported balance at refresh: $17,850.00. This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "2026-05-02 \u2014 Continuous monitoring alert. Automated alert references the same Meridian account.",
+        "Reviewed the May 2, 2026 continuous monitoring alert. The account reference in the alert matches the account already documented in the February 2026 financial report. In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health"
+      ],
+      "engine_rationale": [
+        "[no_trigger] No escalation or information-request rule fired: every identified concern has verifiable mitigating evidence and no material conflict remains."
+      ],
+      "claims": 14,
+      "contradiction_flags": 0
+    },
+    {
+      "slug": "jordan_reyes",
+      "case_id": "PS-2026-00194",
+      "applicant_name": "Jordan Reyes",
+      "expected_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "expected_concern_level": "MODERATE",
+      "critical_evidence": [
+        "staffing_agency_record.txt",
+        "employment_history.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "February 8, 2021",
+        "July 12, 2021",
+        "January 2021"
+      ],
+      "expected_reason_topics": [
+        "employment"
+      ],
+      "actual_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "concern_level": "MODERATE",
+      "confidence": 0.7725,
+      "material_unresolved_issues": 4,
+      "model_proposed_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "reasons": [
+        {
+          "reason": "Employment: the concern rests on evidence that is absent from the package rather than on adverse findings.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0",
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "Employment: the record documents a discrepancy on employment start date between what the applicant reported and what was confirmed; the residue is not yet closed.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "Employment: evidence needed to close this concern is absent \u2014 No record accounts for the period between the reported January 2021 start and the February 8, 2021 assignment start.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "UNSUPPORTED",
+          "source_ids": [],
+          "verification_score": 0.0
+        },
+        {
+          "reason": "Employment: a possible conflict on employment start date needs clarification.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "A third-party staffing record reconciles most of the reported discrepancy and corroborates the applicant's account.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "One month of claimed employment is corroborated by no record in the package and the agency states it holds none.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0",
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "The investigator recorded that no information developed suggests a deliberate misstatement.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7167,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6774,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7001,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7001,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7167,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7167,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7167,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6774,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6774,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8406,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7167,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7001,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.666,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.666,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4563,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8857,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "EVT-2026-04-08-001",
+          "resolved": true,
+          "relevance": 0.3894,
+          "document_name": "Case notes recorded"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3778,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Staffing Agency Record"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8706,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4041,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7167,
+          "document_name": "Staffing Agency Record"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "background_investigation_summary.txt",
+        "employment_history.txt",
+        "investigator_notes.txt",
+        "staffing_agency_record.txt"
+      ],
+      "evidence_texts": [
+        "Client of record: Vantage Analytics Partners Assignment start date: February 8, 2021",
+        "The subject reported a January 2021 start; the agency record begins February 8, 2021 and the agency states it has no record of a placement in January 2021.",
+        "Employer: Vantage Analytics Partners (fictional) Title: Data Operations Specialist Dates as reported by subject: January 2021 to present",
+        "Employer: Vantage Analytics Partners (fictional) Title: Data Operations Specialist Dates as reported by subject: January 2021 to present",
+        "Client of record: Vantage Analytics Partners Assignment start date: February 8, 2021",
+        "Client of record: Vantage Analytics Partners Assignment start date: February 8, 2021",
+        "Client of record: Vantage Analytics Partners Assignment start date: February 8, 2021",
+        "The subject reported a January 2021 start; the agency record begins February 8, 2021 and the agency states it has no record of a placement in January 2021.",
+        "The subject reported a January 2021 start; the agency record begins February 8, 2021 and the agency states it has no record of a placement in January 2021.",
+        "I am writing to explain the difference between the employment start date I reported and the date my employer confirmed. I began working at Vantage Analytics Partners in January 2021 as a contractor placed through a staffing agency.",
+        "Client of record: Vantage Analytics Partners Assignment start date: February 8, 2021",
+        "Employer: Vantage Analytics Partners (fictional) Title: Data Operations Specialist Dates as reported by subject: January 2021 to present",
+        "Assignment start date: February 8, 2021 Assignment end date: July 9, 2021",
+        "Entry date: April 8, 2026 The staffing agency record reconciles most of the discrepancy: the subject was working at the client site from February 2021 under a contract placement and converted to direct employment in July 2021. This is consistent with the subject's explanation of the difference.",
+        "Assignment start date: February 8, 2021 Assignment end date: July 9, 2021",
+        "Entry date: April 8, 2026 The staffing agency record reconciles most of the discrepancy: the subject was working at the client site from February 2021 under a contract placement and converted to direct employment in July 2021. This is consistent with the subject's explanation of the difference.",
+        "aire I reported the date I actually started the work, which was January 2021, not the date my employment status changed. I did not intend to misstate anything. I have asked the staffing agency to provide a record of my assignment dates and I will submit that record.",
+        "One month remains unreconciled.",
+        "Discrepancy partially reconciled; one month remains unverified.",
+        "Period Covered: February 2019 through February 2026 ISSUES IDENTIFIED FOR FURTHER REVIEW Employment: The employment dates reported by the subject for one prior employer do not match the dates confirmed by that employer's records office.",
+        "The agency's record shows the assignment beginning in February 2021. The agency has no record of any placement of this worker with this client during January",
+        "This is consistent with the subject's explanation of the difference. One month remains unreconciled. The subject reported a January 2021 start; the agency record begins February 8, 2021 and the agency states it has no record of a placement in January 2021.",
+        "arty staffing agency record has been introduced to explain part of the discrepancy and requires analyst reconciliation. ITEMS WITH NO ADVERSE INFORMATION",
+        "Client of record: Vantage Analytics Partners Assignment start date: February 8, 2021"
+      ],
+      "engine_rationale": [
+        "[high_concern_pending_evidence] Employment: the concern rests on evidence that is absent from the package rather than on adverse findings.",
+        "[disclosed_discrepancy] Employment: the record documents a discrepancy on employment start date between what the applicant reported and what was confirmed; the residue is not yet closed.",
+        "[material_missing_information] Employment: evidence needed to close this concern is absent \u2014 No record accounts for the period between the reported January 2021 start and the February 8, 2021 assignment start.",
+        "[possible_conflict] Employment: a possible conflict on employment start date needs clarification."
+      ],
+      "claims": 8,
+      "contradiction_flags": 2
+    },
+    {
+      "slug": "marcus_dell",
+      "case_id": "PS-2026-00217",
+      "applicant_name": "Marcus Dell",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "expected_concern_level": "HIGH",
+      "critical_evidence": [
+        "financial_report.txt",
+        "monitoring_alerts.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "$7,080.00",
+        "91 percent",
+        "no repayment agreement"
+      ],
+      "expected_reason_topics": [
+        "financial",
+        "monitoring"
+      ],
+      "actual_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "concern_level": "HIGH",
+      "confidence": 0.7956,
+      "material_unresolved_issues": 3,
+      "model_proposed_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "reasons": [
+        {
+          "reason": "Financial: 1 adverse finding with no verifiable mitigating evidence in the package.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "DOC-3-CHUNK-0"
+          ],
+          "verification_score": 0.945
+        },
+        {
+          "reason": "Two distinct collection accounts totalling $7,080.00 are currently delinquent.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0"
+          ],
+          "verification_score": 0.945
+        },
+        {
+          "reason": "No repayment agreement or mitigating financial documentation is present for either account.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0",
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 0.9041
+        },
+        {
+          "reason": "Revolving credit utilisation of 91 percent indicates continuing financial pressure rather than a closed event.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.945
+        },
+        {
+          "reason": "The employment record independently corroborates the applicant's stated cause for the delinquencies.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 0.9041
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4454,
+          "document_name": "Continuous Monitoring Alert Log"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4751,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4751,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6538,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3482,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4454,
+          "document_name": "Continuous Monitoring Alert Log"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.744,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.744,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6538,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4751,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.7867,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4462,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3989,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4454,
+          "document_name": "Continuous Monitoring Alert Log"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "monitoring_alerts.txt"
+      ],
+      "evidence_texts": [
+        "Alert log covering February 2026 through April 2026 ALERT CM-81002 \u2014 February 6, 2026 \u2014 Category: Financial",
+        "Kestrel Auto Finance \u2014 $4,220.00 \u2014 First reported delinquent March 2026",
+        "Kestrel Auto Finance \u2014 $4,220.00 \u2014 First reported delinquent March 2026",
+        "The employment record confirms a reduction in force in November 2025 and a re-employment date in March 2026, which is consistent with the subject's explanation for the timing of the delinquencies.",
+        "I was unemployed for approximately four months and I fell behind on my car loan and on a balance owed to a former landlord. I started a new position in March 2026.",
+        "Alert log covering February 2026 through April 2026 ALERT CM-81002 \u2014 February 6, 2026 \u2014 Category: Financial",
+        "Employer: Calder Distribution Company (fictional) Title: Logistics Coordinator Dates confirmed by employer: August 2021 to November 2025",
+        "Employer: Calder Distribution Company (fictional) Title: Logistics Coordinator Dates confirmed by employer: August 2021 to November 2025",
+        "The employment record confirms a reduction in force in November 2025 and a re-employment date in March 2026, which is consistent with the subject's explanation for the timing of the delinquencies.",
+        "Kestrel Auto Finance \u2014 $4,220.00 \u2014 First reported delinquent March 2026",
+        "e-employment date in March 2026, which is consistent with the subject's explanation for the timing of the delinquencies. No repayment agreement is documented for either collection account as of this entry.",
+        "I started a new position in March 2026. I have contacted both creditors. I have not yet reached a written agreement with either of them.",
+        "Entry date: May 4, 2026",
+        "Alert log covering February 2026 through April 2026 ALERT CM-81002 \u2014 February 6, 2026 \u2014 Category: Financial"
+      ],
+      "engine_rationale": [
+        "[unmitigated_high_concern] Financial: 1 adverse finding with no verifiable mitigating evidence in the package.",
+        "[model_divergence] The model proposed REQUEST_ADDITIONAL_INFORMATION; the evidence rules produced ESCALATE_FOR_ENHANCED_REVIEW. The more conservative state ships and the divergence is recorded."
+      ],
+      "claims": 9,
+      "contradiction_flags": 0
+    },
+    {
+      "slug": "elena_vasquez",
+      "case_id": "PS-2026-00225",
+      "applicant_name": "Elena Vasquez",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "expected_concern_level": "HIGH",
+      "critical_evidence": [
+        "employer_verification.txt",
+        "reference_interview.txt",
+        "investigator_notes.txt"
+      ],
+      "critical_evidence_terms": [
+        "June 2023",
+        "September 2023",
+        "final payroll"
+      ],
+      "expected_reason_topics": [
+        "employment"
+      ],
+      "actual_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "concern_level": "HIGH",
+      "confidence": 0.7514,
+      "material_unresolved_issues": 1,
+      "model_proposed_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "reasons": [
+        {
+          "reason": "Employment: two independent records disagree on employment end date (Employer Verification Record vs Reference Interview Summary) and the package contains nothing that resolves the conflict.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "DOC-3-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "The employer's payroll system of record and the reference interview give different employment end dates for the same position.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "DOC-3-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "No documentary evidence supporting the later date is present in the package.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "The employer states no payroll activity is recorded after the June 2023 period, which the September account does not explain.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "No adverse information was developed in any other category.",
+          "category": "documentation",
+          "importance": "moderate",
+          "evidence_status": "WEAK_SUPPORT",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 0.6968
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4266,
+          "document_name": "Reference Interview Summary"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4266,
+          "document_name": "Reference Interview Summary"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7304,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6968,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3589,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.95,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8075,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4266,
+          "document_name": "Reference Interview Summary"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5922,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5882,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3856,
+          "document_name": "Reference Interview Summary"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "background_investigation_summary.txt",
+        "employer_verification.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "reference_interview.txt"
+      ],
+      "evidence_texts": [
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "The reference stated that the subject worked on the production quality team and that employment ended September 2023, following the close of a certification project the subject had led.",
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "The reference stated that the subject worked on the production quality team and that employment ended September 2023, following the close of a certification project the subject had led.",
+        "The employer's payroll system of record shows employment ending June 2023.",
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "No delinquent accounts are reported.",
+        "I gave notice in August and worked through the completion of a certification audit. I am aware the questionnaire I submitted lists September 2023, which is the date I have requested a copy of my separation letter and my final pay statements from the employer and will provide them when I receive them.",
+        "September 2023 from memory. The subject reports September 2023. I have requested the separation letter and final pay statements.",
+        "I am aware the questionnaire I submitted lists September 2023, which is the date I have requested a copy of my separation letter and my final pay statements from the employer and will provide them when I receive them.",
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "The reference stated that the subject worked on the production quality team and that employment ended September 2023, following the close of a certification project the subject had led.",
+        "I have requested the separation letter and final pay statements. Until documentary evidence is received, the discrepancy of approximately three months is unresolved.",
+        "Employment: The separation date for one prior employer is reported differently by three sources in the record. The conflict is unresolved.",
+        "The reference recalled a departure lunch held in the same month."
+      ],
+      "engine_rationale": [
+        "[material_contradiction] Employment: two independent records disagree on employment end date (Employer Verification Record vs Reference Interview Summary) and the package contains nothing that resolves the conflict."
+      ],
+      "claims": 7,
+      "contradiction_flags": 2
+    },
+    {
+      "slug": "hannah_ostrowski",
+      "case_id": "PS-2026-00256",
+      "applicant_name": "Hannah Ostrowski",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_concern_level": "NONE",
+      "critical_evidence": [
+        "financial_report.txt",
+        "residence_verification.txt",
+        "employment_history.txt"
+      ],
+      "critical_evidence_terms": [
+        "No delinquent accounts",
+        "6 percent",
+        "no unverified periods"
+      ],
+      "expected_reason_topics": [
+        "documentation",
+        "financial",
+        "identity_background"
+      ],
+      "actual_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "concern_level": "NONE",
+      "confidence": 0.9057,
+      "material_unresolved_issues": 0,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "No issue meeting the threshold for further review was identified in any category.",
+          "category": "documentation",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-1-CHUNK-0"
+          ],
+          "verification_score": 0.8484
+        },
+        {
+          "reason": "All reported information was corroborated by at least one independent source.",
+          "category": "documentation",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "The financial record shows no delinquency in the prior 84 months and 6 percent utilisation.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "Residence history is continuous and fully verified with no unverified periods.",
+          "category": "identity_background",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-1-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9333,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8484,
+          "document_name": "Residence Verification Record"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Case Notes"
+        }
+      ],
+      "evidence_files": [
+        "background_investigation_summary.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "residence_verification.txt"
+      ],
+      "evidence_texts": [
+        "ITEMS WITH NO ADVERSE INFORMATION Financial record review, criminal history checks, employment verification, residence verification, education verification, foreign travel reporting and foreign contact reporting all returned no adverse information.",
+        "Two developed references were interviewed and both corroborated the subject's residence and employment history.",
+        "No delinquent accounts are reported. Twelve trade lines are reported, all current, with no 30-day or greater delinquency in the prior 84 months.",
+        "ADDRESS 2 \u2014 Reported August 2017 to March 2021 \u2014 Verified through lease record and two developed references. No unverified periods. Reported residence history is continuous.",
+        "Two developed references were interviewed and both corroborated the subject's residence and employment history."
+      ],
+      "engine_rationale": [
+        "[no_trigger] No escalation or information-request rule fired: every identified concern has verifiable mitigating evidence and no material conflict remains."
+      ],
+      "claims": 7,
+      "contradiction_flags": 0
+    }
+  ],
+  "mutations": [
+    {
+      "id": "alex_m1_remove_repayment_evidence",
+      "base_slug": "alex_morgan",
+      "label": "Remove all repayment-plan evidence",
+      "kind": "removal_material",
+      "hypothesis": "Both documents that evidence the repayment plan are gone, so the mitigation that justifies proceeding is asserted but no longer verifiable anywhere in the package.",
+      "removed": [
+        "payment_plan.txt",
+        "investigator_notes.txt"
+      ],
+      "added": [],
+      "base_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "actual_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "concern_level": "MODERATE",
+      "confidence": 0.71,
+      "material_unresolved_issues": 1,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "Monitoring: mitigation is asserted but the supporting document is not in the package, so the mitigation cannot be verified.",
+          "category": "monitoring",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-1",
+            "EVT-2026-05-02-001"
+          ],
+          "verification_score": 0.8428
+        },
+        {
+          "reason": "Monitoring: 1 of 2 statements in this category could not be traced to evidence in the package.",
+          "category": "monitoring",
+          "importance": "high",
+          "evidence_status": "UNSUPPORTED",
+          "source_ids": [],
+          "verification_score": 0.0
+        },
+        {
+          "reason": "The applicant's explanation is consistent with the creditor's own file annotation recording the account as in dispute.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0",
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.96
+        },
+        {
+          "reason": "Employment dates reported by the applicant match the dates confirmed by both employers of record.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 0.87
+        },
+        {
+          "reason": "Disclosed foreign travel matches border-crossing records with no undisclosed trips identified.",
+          "category": "foreign_travel",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 0.8428
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-6-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8428,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "EVT-2026-05-02-001",
+          "resolved": true,
+          "relevance": 0.5393,
+          "document_name": "Continuous monitoring alert"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8625,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6009,
+          "document_name": "Foreign Travel Disclosure"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5653,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8122,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.6165,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4056,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.3136,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8428,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5653,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "EVT-2026-05-02-001",
+          "resolved": true,
+          "relevance": 0.5393,
+          "document_name": "Continuous monitoring alert"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3884,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "monitoring_alert.txt",
+        "travel_disclosure.txt"
+      ],
+      "evidence_texts": [
+        "This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "2026-05-02 \u2014 Continuous monitoring alert. Automated alert references the same Meridian account.",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health",
+        "Date first reported delinquent: February 4, 2026",
+        "REPORTED FOREIGN TRAVEL (rolling 24 months) Dates: September 8-16, 2025",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "The consumer's dispute was filed with the creditor on December 9, 2025.",
+        "2026-03-14 \u2014 Repayment plan effective. Structured repayment agreement begins; $325 monthly.",
+        "APPLICANT STATEMENT Submitted: March 18, 2026",
+        "I did not receive a response before the account was referred to collections. Once I understood that the account had gone to collections, I contacted the collection agent directly and entered a payment agreement. I entered a payment agreement in March and I have made every scheduled payment since it began.",
+        "This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "2026-05-02 \u2014 Continuous monitoring alert. Automated alert references the same Meridian account.",
+        "Dates: March 2019 to May 2022",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health"
+      ],
+      "engine_rationale": [
+        "[unverifiable_mitigation] Monitoring: mitigation is asserted but the supporting document is not in the package, so the mitigation cannot be verified.",
+        "[unsupported_material_statements] Monitoring: 1 of 2 statements in this category could not be traced to evidence in the package.",
+        "[model_divergence] The model proposed PROCEED_TO_STANDARD_REVIEW; the evidence rules produced REQUEST_ADDITIONAL_INFORMATION. The more conservative state ships and the divergence is recorded."
+      ],
+      "claims": 14,
+      "contradiction_flags": 0
+    },
+    {
+      "id": "alex_m2_add_contradictory_financial_record",
+      "base_slug": "alex_morgan",
+      "label": "Add a contradictory financial record",
+      "kind": "contradiction",
+      "hypothesis": "Two independent records now disagree on the delinquency amount and date, and nothing in the package resolves it.",
+      "removed": [],
+      "added": [
+        "revised_financial_report.txt"
+      ],
+      "base_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "actual_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "concern_level": "HIGH",
+      "confidence": 0.7014,
+      "material_unresolved_issues": 1,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "Financial: two independent records disagree on delinquency reported date (Financial Report vs Revised Financial Report) and the package contains nothing that resolves the conflict.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "DOC-9-CHUNK-0"
+          ],
+          "verification_score": 0.96
+        },
+        {
+          "reason": "The single financial concern has documented, independently verified mitigation.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0",
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "The applicant's explanation is consistent with the creditor's own file annotation recording the account as in dispute.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0",
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.96
+        },
+        {
+          "reason": "The repayment plan is corroborated by the servicer, not only asserted by the applicant.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "Employment dates reported by the applicant match the dates confirmed by both employers of record.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-1",
+            "DOC-1-CHUNK-1"
+          ],
+          "verification_score": 0.87
+        },
+        {
+          "reason": "Disclosed foreign travel matches border-crossing records with no undisclosed trips identified.",
+          "category": "foreign_travel",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 0.8992
+        },
+        {
+          "reason": "The later monitoring alert relates to the already-disclosed account rather than to new activity.",
+          "category": "monitoring",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-7-CHUNK-0",
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8625,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-9-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.715,
+          "document_name": "Revised Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6984,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8625,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.87,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4433,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6359,
+          "document_name": "Foreign Travel Disclosure"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5703,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8122,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.5415,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8423,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.3709,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8588,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7592,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.6589,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8269,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-9-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4006,
+          "document_name": "Revised Financial Report"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4004,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.9028,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8128,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-9-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7514,
+          "document_name": "Revised Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6984,
+          "document_name": "Applicant Statement"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "background_investigation_summary.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "monitoring_alert.txt",
+        "payment_plan.txt",
+        "revised_financial_report.txt",
+        "travel_disclosure.txt"
+      ],
+      "evidence_texts": [
+        "Date first reported delinquent: February 4, 2026",
+        "DELINQUENT ACCOUNT Creditor: Meridian Regional Health Services",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "In 2025 I received treatment at a facility operated by Meridian Regional Health My insurer processed part of the claim and denied the remainder, and I was billed for services I believed were covered under my plan. I filed a written dispute with the billing office in December 2025 asking for an itemised statement and a review of the denied portion.",
+        "Date first reported delinquent: February 4, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "No unexplained gaps in employment exceeding 30 days were identified for the period under review. The dates reported by the subject on the security questionnaire match the dates confirmed by both employers of record.",
+        "Employment history was verified with two employers of record. Residence history was verified for three addresses over the seven-year period with no unexplained gaps.",
+        "REPORTED FOREIGN TRAVEL (rolling 24 months) Dates: September 8-16, 2025",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The consumer's dispute was filed with the creditor on December 9, 2025.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "2026-03-14 \u2014 Repayment plan effective. Structured repayment agreement begins; $325 monthly.",
+        "Agreed monthly payment: $325.00",
+        "2026-03-14 \u2014 Repayment plan effective.",
+        "PAYMENT HISTORY AS OF MAY 1, 2026 March 14, 2026 \u2014 $325.00 \u2014 Received",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule. The servicer confirmed no missed payments as of the date of contact.",
+        "rch 14, 2026 and two payments received on schedule.",
+        "In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "This pull reports a different balance and a different first-delinquency date for the same creditor and the same account reference as the February 2026 report. The bureau has not explained the difference. The two reports have not been reconciled.",
+        "Reported balance at refresh: $17,850.00. This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "Reviewed the May 2, 2026 continuous monitoring alert. The account reference in the alert matches the account already documented in the February 2026 financial report. In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "This pull reports a different balance and a different first-delinquency date for the same creditor and the same account reference as the February 2026 report.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "In 2025 I received treatment at a facility operated by Meridian Regional Health My insurer processed part of the claim and denied the remainder, and I was billed for services I believed were covered under my plan. I filed a written dispute with the billing office in December 2025 asking for an itemised statement and a review of the denied portion."
+      ],
+      "engine_rationale": [
+        "[material_contradiction] Financial: two independent records disagree on delinquency reported date (Financial Report vs Revised Financial Report) and the package contains nothing that resolves the conflict.",
+        "[model_divergence] The model proposed PROCEED_TO_STANDARD_REVIEW; the evidence rules produced ESCALATE_FOR_ENHANCED_REVIEW. The more conservative state ships and the divergence is recorded."
+      ],
+      "claims": 14,
+      "contradiction_flags": 2
+    },
+    {
+      "id": "alex_m3_remove_irrelevant_travel_document",
+      "base_slug": "alex_morgan",
+      "label": "Remove a document no material reason depends on",
+      "kind": "immaterial",
+      "hypothesis": "Travel raised no concern in this case, so removing its document must not move a financially-driven recommendation.",
+      "removed": [
+        "travel_disclosure.txt"
+      ],
+      "added": [],
+      "base_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "actual_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "concern_level": "LOW",
+      "confidence": 0.81,
+      "material_unresolved_issues": 0,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "The single financial concern has documented, independently verified mitigation.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "The applicant's explanation is consistent with the creditor's own file annotation recording the account as in dispute.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0",
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.96
+        },
+        {
+          "reason": "The repayment plan is corroborated by the servicer, not only asserted by the applicant.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0",
+            "EVT-2026-03-14-001"
+          ],
+          "verification_score": 0.8423
+        },
+        {
+          "reason": "Employment dates reported by the applicant match the dates confirmed by both employers of record.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-1",
+            "DOC-1-CHUNK-1"
+          ],
+          "verification_score": 0.87
+        },
+        {
+          "reason": "Disclosed foreign travel matches border-crossing records with no undisclosed trips identified.",
+          "category": "foreign_travel",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 0.9028
+        },
+        {
+          "reason": "The later monitoring alert relates to the already-disclosed account rather than to new activity.",
+          "category": "monitoring",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-7-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8625,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8423,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.3709,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.87,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4733,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5503,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8122,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.5415,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8423,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.3709,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8588,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7092,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.6589,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8269,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4154,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "EVT-2026-05-02-001",
+          "resolved": true,
+          "relevance": 0.3533,
+          "document_name": "Continuous monitoring alert"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.9028,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8128,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5503,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "background_investigation_summary.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "monitoring_alert.txt",
+        "payment_plan.txt"
+      ],
+      "evidence_texts": [
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health",
+        "Date first reported delinquent: February 4, 2026",
+        "Agreed monthly payment: $325.00",
+        "2026-03-14 \u2014 Repayment plan effective.",
+        "No unexplained gaps in employment exceeding 30 days were identified for the period under review. The dates reported by the subject on the security questionnaire match the dates confirmed by both employers of record.",
+        "Employment history was verified with two employers of record. Residence history was verified for three addresses over the seven-year period with no unexplained gaps.",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The consumer's dispute was filed with the creditor on December 9, 2025.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "2026-03-14 \u2014 Repayment plan effective. Structured repayment agreement begins; $325 monthly.",
+        "Agreed monthly payment: $325.00",
+        "2026-03-14 \u2014 Repayment plan effective.",
+        "PAYMENT HISTORY AS OF MAY 1, 2026 March 14, 2026 \u2014 $325.00 \u2014 Received",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule. The servicer confirmed no missed payments as of the date of contact.",
+        "rch 14, 2026 and two payments received on schedule.",
+        "In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "Reported balance at refresh: $17,850.00. This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "2026-05-02 \u2014 Continuous monitoring alert. Automated alert references the same Meridian account.",
+        "Reviewed the May 2, 2026 continuous monitoring alert. The account reference in the alert matches the account already documented in the February 2026 financial report. In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health"
+      ],
+      "engine_rationale": [
+        "[no_trigger] No escalation or information-request rule fired: every identified concern has verifiable mitigating evidence and no material conflict remains."
+      ],
+      "claims": 14,
+      "contradiction_flags": 0
+    },
+    {
+      "id": "alex_m4_add_benign_document",
+      "base_slug": "alex_morgan",
+      "label": "Add an unrelated benign document",
+      "kind": "immaterial",
+      "hypothesis": "Adding a clean, unrelated record must not move the recommendation in either direction.",
+      "removed": [],
+      "added": [
+        "education_verification.txt"
+      ],
+      "base_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "actual_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "concern_level": "LOW",
+      "confidence": 0.8314,
+      "material_unresolved_issues": 0,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "The single financial concern has documented, independently verified mitigation.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0",
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "The applicant's explanation is consistent with the creditor's own file annotation recording the account as in dispute.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0",
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.96
+        },
+        {
+          "reason": "The repayment plan is corroborated by the servicer, not only asserted by the applicant.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        },
+        {
+          "reason": "Employment dates reported by the applicant match the dates confirmed by both employers of record.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-1",
+            "DOC-9-CHUNK-0"
+          ],
+          "verification_score": 0.87
+        },
+        {
+          "reason": "Disclosed foreign travel matches border-crossing records with no undisclosed trips identified.",
+          "category": "foreign_travel",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 0.8992
+        },
+        {
+          "reason": "The later monitoring alert relates to the already-disclosed account rather than to new activity.",
+          "category": "monitoring",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-7-CHUNK-0",
+            "DOC-8-CHUNK-0"
+          ],
+          "verification_score": 0.9136
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8625,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.87,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-9-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5276,
+          "document_name": "Education Verification"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6359,
+          "document_name": "Foreign Travel Disclosure"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5778,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8122,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8818,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.5415,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8423,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "EVT-2026-03-14-001",
+          "resolved": true,
+          "relevance": 0.3709,
+          "document_name": "Repayment plan effective"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8588,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7592,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.6589,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8269,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.4304,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "EVT-2026-05-02-001",
+          "resolved": true,
+          "relevance": 0.3608,
+          "document_name": "Continuous monitoring alert"
+        },
+        {
+          "source_id": "DOC-8-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.9028,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.8053,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-7-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5778,
+          "document_name": "Continuous Monitoring Alert"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9136,
+          "document_name": "Payment Plan Document"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5611,
+          "document_name": "Applicant Statement"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "education_verification.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "monitoring_alert.txt",
+        "payment_plan.txt",
+        "travel_disclosure.txt"
+      ],
+      "evidence_texts": [
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health",
+        "Date first reported delinquent: February 4, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "No unexplained gaps in employment exceeding 30 days were identified for the period under review. The dates reported by the subject on the security questionnaire match the dates confirmed by both employers of record.",
+        "The dates and credential reported by the subject match the institution's record.",
+        "REPORTED FOREIGN TRAVEL (rolling 24 months) Dates: September 8-16, 2025",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The consumer's dispute was filed with the creditor on December 9, 2025.",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule.",
+        "2026-03-14 \u2014 Repayment plan effective. Structured repayment agreement begins; $325 monthly.",
+        "Agreed monthly payment: $325.00",
+        "2026-03-14 \u2014 Repayment plan effective.",
+        "PAYMENT HISTORY AS OF MAY 1, 2026 March 14, 2026 \u2014 $325.00 \u2014 Received",
+        "The servicer confirmed a plan effective date of March 14, 2026 and two payments received on schedule. The servicer confirmed no missed payments as of the date of contact.",
+        "rch 14, 2026 and two payments received on schedule.",
+        "In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "Reported balance at refresh: $17,850.00. This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "2026-05-02 \u2014 Continuous monitoring alert. Automated alert references the same Meridian account.",
+        "Reviewed the May 2, 2026 continuous monitoring alert. The account reference in the alert matches the account already documented in the February 2026 financial report. In my assessment this alert reflects the same underlying account rather than a second, separate delinquency, but this correlation should be confirmed by the reviewing adjudicator.",
+        "This alert references the same originating creditor and account reference as the delinquency reported in the February 4, 2026 financial report.",
+        "Generated: May 2, 2026, 03:14 UTC Subject: Alex Morgan Alert category: Financial \u2014 adverse account activity",
+        "STRUCTURED REPAYMENT AGREEMENT Plan effective date: March 14, 2026",
+        "Regarding: Delinquent account reported February 2026 I am providing this statement to explain the delinquent balance that appeared on my credit report in February 2026. In 2025 I received treatment at a facility operated by Meridian Regional Health"
+      ],
+      "engine_rationale": [
+        "[no_trigger] No escalation or information-request rule fired: every identified concern has verifiable mitigating evidence and no material conflict remains."
+      ],
+      "claims": 14,
+      "contradiction_flags": 0
+    },
+    {
+      "id": "elena_m1_remove_conflicting_reference",
+      "base_slug": "elena_vasquez",
+      "label": "Remove one of several records attesting the conflict",
+      "kind": "immaterial",
+      "hypothesis": "The September 2023 date is attested by both the reference interview and the applicant statement, so removing one of them must not make the conflict go away.",
+      "removed": [
+        "reference_interview.txt"
+      ],
+      "added": [],
+      "base_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "actual_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "concern_level": "HIGH",
+      "confidence": 0.6843,
+      "material_unresolved_issues": 0,
+      "model_proposed_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "reasons": [
+        {
+          "reason": "The employer's payroll system of record and the reference interview give different employment end dates for the same position.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "DOC-3-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "No documentary evidence supporting the later date is present in the package.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "WEAK_SUPPORT",
+          "source_ids": [
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 0.6468
+        },
+        {
+          "reason": "The employer states no payroll activity is recorded after the June 2023 period, which the September account does not explain.",
+          "category": "employment",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3589,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6468,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7304,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.7575,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9662,
+          "document_name": "Employer Verification Record"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3589,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-1-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.6257,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5797,
+          "document_name": "Case Notes"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "background_investigation_summary.txt",
+        "employer_verification.txt",
+        "financial_report.txt",
+        "investigator_notes.txt"
+      ],
+      "evidence_texts": [
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "I gave notice in August and worked through the completion of a certification audit. I am aware the questionnaire I submitted lists September 2023, which is the date I have requested a copy of my separation letter and my final pay statements from the employer and will provide them when I receive them.",
+        "No delinquent accounts are reported.",
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "The employer's payroll system of record shows employment ending June 2023.",
+        "September 2023 from memory. The subject reports September 2023. I have requested the separation letter and final pay statements.",
+        "I am aware the questionnaire I submitted lists September 2023, which is the date I have requested a copy of my separation letter and my final pay statements from the employer and will provide them when I receive them.",
+        "Employment end date: Employment ended June 2023 Final payroll period processed: Pay period ending June 30, 2023",
+        "I gave notice in August and worked through the completion of a certification audit. I am aware the questionnaire I submitted lists September 2023, which is the date I have requested a copy of my separation letter and my final pay statements from the employer and will provide them when I receive them.",
+        "Employment: The separation date for one prior employer is reported differently by three sources in the record. The conflict is unresolved.",
+        "I have requested the separation letter and final pay statements. Until documentary evidence is received, the discrepancy of approximately three months is unresolved."
+      ],
+      "engine_rationale": [
+        "[no_trigger] No escalation or information-request rule fired: every identified concern has verifiable mitigating evidence and no material conflict remains.",
+        "[model_divergence] The model proposed ESCALATE_FOR_ENHANCED_REVIEW; the evidence rules produced PROCEED_TO_STANDARD_REVIEW. The more conservative state ships and the divergence is recorded."
+      ],
+      "claims": 7,
+      "contradiction_flags": 1
+    },
+    {
+      "id": "hannah_m1_add_benign_document",
+      "base_slug": "hannah_ostrowski",
+      "label": "Add an unrelated benign document to a clean case",
+      "kind": "immaterial",
+      "hypothesis": "A clean package plus one more clean document is still a clean package.",
+      "removed": [],
+      "added": [
+        "education_verification.txt"
+      ],
+      "base_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "expected_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "actual_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "concern_level": "NONE",
+      "confidence": 0.9057,
+      "material_unresolved_issues": 0,
+      "model_proposed_recommendation": "PROCEED_TO_STANDARD_REVIEW",
+      "reasons": [
+        {
+          "reason": "No issue meeting the threshold for further review was identified in any category.",
+          "category": "documentation",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-1-CHUNK-0"
+          ],
+          "verification_score": 0.8484
+        },
+        {
+          "reason": "All reported information was corroborated by at least one independent source.",
+          "category": "documentation",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-6-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "The financial record shows no delinquency in the prior 84 months and 6 percent utilisation.",
+          "category": "financial",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        },
+        {
+          "reason": "Residence history is continuous and fully verified with no unverified periods.",
+          "category": "identity_background",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 1.0
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-1-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4,
+          "document_name": "Background Investigation Summary"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.9333,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.8484,
+          "document_name": "Residence Verification Record"
+        },
+        {
+          "source_id": "DOC-6-CHUNK-0",
+          "resolved": true,
+          "relevance": 1.0,
+          "document_name": "Case Notes"
+        }
+      ],
+      "evidence_files": [
+        "background_investigation_summary.txt",
+        "financial_report.txt",
+        "investigator_notes.txt",
+        "residence_verification.txt"
+      ],
+      "evidence_texts": [
+        "ITEMS WITH NO ADVERSE INFORMATION Financial record review, criminal history checks, employment verification, residence verification, education verification, foreign travel reporting and foreign contact reporting all returned no adverse information.",
+        "Two developed references were interviewed and both corroborated the subject's residence and employment history.",
+        "No delinquent accounts are reported. Twelve trade lines are reported, all current, with no 30-day or greater delinquency in the prior 84 months.",
+        "ADDRESS 2 \u2014 Reported August 2017 to March 2021 \u2014 Verified through lease record and two developed references. No unverified periods. Reported residence history is continuous.",
+        "Two developed references were interviewed and both corroborated the subject's residence and employment history."
+      ],
+      "engine_rationale": [
+        "[no_trigger] No escalation or information-request rule fired: every identified concern has verifiable mitigating evidence and no material conflict remains."
+      ],
+      "claims": 7,
+      "contradiction_flags": 0
+    },
+    {
+      "id": "marcus_m1_remove_monitoring_alert_log",
+      "base_slug": "marcus_dell",
+      "label": "Remove the monitoring alert log",
+      "kind": "immaterial",
+      "hypothesis": "The delinquent accounts are established by the financial report independently, so removing the alert log must not de-escalate the case.",
+      "removed": [
+        "monitoring_alerts.txt"
+      ],
+      "added": [],
+      "base_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "expected_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "actual_recommendation": "ESCALATE_FOR_ENHANCED_REVIEW",
+      "concern_level": "HIGH",
+      "confidence": 0.74,
+      "material_unresolved_issues": 3,
+      "model_proposed_recommendation": "REQUEST_ADDITIONAL_INFORMATION",
+      "reasons": [
+        {
+          "reason": "Financial: 1 adverse finding with no verifiable mitigating evidence in the package.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0",
+            "EVT-2026-02-06-001"
+          ],
+          "verification_score": 0.9299
+        },
+        {
+          "reason": "Two distinct collection accounts totalling $7,080.00 are currently delinquent.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-3-CHUNK-0"
+          ],
+          "verification_score": 0.8557
+        },
+        {
+          "reason": "No repayment agreement or mitigating financial documentation is present for either account.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-4-CHUNK-0"
+          ],
+          "verification_score": 0.8541
+        },
+        {
+          "reason": "Revolving credit utilisation of 91 percent indicates continuing financial pressure rather than a closed event.",
+          "category": "financial",
+          "importance": "high",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-2-CHUNK-0"
+          ],
+          "verification_score": 0.9299
+        },
+        {
+          "reason": "The employment record independently corroborates the applicant's stated cause for the delinquencies.",
+          "category": "employment",
+          "importance": "moderate",
+          "evidence_status": "SUPPORTED",
+          "source_ids": [
+            "DOC-5-CHUNK-0"
+          ],
+          "verification_score": 0.8541
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5176,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "EVT-2026-02-06-001",
+          "resolved": true,
+          "relevance": 0.4857,
+          "document_name": "Monitoring alert CM-81002"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3557,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-4-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.694,
+          "document_name": "Employment History"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5176,
+          "document_name": "Financial Report"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3417,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3417,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.3557,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "DOC-5-CHUNK-1",
+          "resolved": true,
+          "relevance": 0.7867,
+          "document_name": "Case Notes"
+        },
+        {
+          "source_id": "DOC-3-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.4262,
+          "document_name": "Applicant Statement"
+        },
+        {
+          "source_id": "EVT-2026-03-01-001",
+          "resolved": true,
+          "relevance": 0.3409,
+          "document_name": "Monitoring alert CM-81455"
+        },
+        {
+          "source_id": "DOC-2-CHUNK-0",
+          "resolved": true,
+          "relevance": 0.5176,
+          "document_name": "Financial Report"
+        }
+      ],
+      "evidence_files": [
+        "applicant_statement.txt",
+        "employment_history.txt",
+        "financial_report.txt",
+        "investigator_notes.txt"
+      ],
+      "evidence_texts": [
+        "Kestrel Auto Finance \u2014 $4,220.00 \u2014 First reported delinquent March 2026",
+        "Credit utilisation threshold exceeded.",
+        "I was unemployed for approximately four months and I fell behind on my car loan and on a balance owed to a former landlord. I started a new position in March 2026.",
+        "Employer: Calder Distribution Company (fictional) Title: Logistics Coordinator Dates confirmed by employer: August 2021 to November 2025",
+        "Kestrel Auto Finance \u2014 $4,220.00 \u2014 First reported delinquent March 2026",
+        "CM-81455 and CM-82310 reference two distinct collection accounts and are separate financial items. Alert CM-81002 reflects utilisation on existing accounts rather than a new account. Alert CM-81799 is an address change that the subject also reported directly.",
+        "CM-81455 and CM-82310 reference two distinct collection accounts and are separate financial items. Alert CM-81002 reflects utilisation on existing accounts rather than a new account. Alert CM-81799 is an address change that the subject also reported directly.",
+        "I was unemployed for approximately four months and I fell behind on my car loan and on a balance owed to a former landlord. I started a new position in March 2026.",
+        "e-employment date in March 2026, which is consistent with the subject's explanation for the timing of the delinquencies. No repayment agreement is documented for either collection account as of this entry.",
+        "I started a new position in March 2026. I have contacted both creditors. I have not yet reached a written agreement with either of them.",
+        "2026-03-01 \u2014 Monitoring alert CM-81455. New collection account reported.",
+        "Kestrel Auto Finance \u2014 $4,220.00 \u2014 First reported delinquent March 2026"
+      ],
+      "engine_rationale": [
+        "[unmitigated_high_concern] Financial: 1 adverse finding with no verifiable mitigating evidence in the package.",
+        "[model_divergence] The model proposed REQUEST_ADDITIONAL_INFORMATION; the evidence rules produced ESCALATE_FOR_ENHANCED_REVIEW. The more conservative state ships and the divergence is recorded."
+      ],
+      "claims": 9,
+      "contradiction_flags": 0
+    }
+  ]
+}

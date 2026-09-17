@@ -1,0 +1,79 @@
+{
+  "case_number": "PS-2026-00225",
+  "applicant_name": "Elena Vasquez",
+  "slug": "elena_vasquez",
+  "status": "Awaiting AI Analysis",
+  "key_signal": "Conflicting separation dates across source documents",
+  "scenario": "conflicting_employment_dates",
+  "opened_on": "2026-02-11",
+  "documents": [
+    {
+      "file": "background_investigation_summary.txt",
+      "document_name": "Background Investigation Summary",
+      "document_type": "investigation_summary"
+    },
+    {
+      "file": "employer_verification.txt",
+      "document_name": "Employer Verification Record",
+      "document_type": "employment_history"
+    },
+    {
+      "file": "reference_interview.txt",
+      "document_name": "Reference Interview Summary",
+      "document_type": "reference_interview"
+    },
+    {
+      "file": "applicant_statement.txt",
+      "document_name": "Applicant Statement",
+      "document_type": "applicant_statement"
+    },
+    {
+      "file": "investigator_notes.txt",
+      "document_name": "Case Notes",
+      "document_type": "case_notes"
+    },
+    {
+      "file": "financial_report.txt",
+      "document_name": "Financial Report",
+      "document_type": "financial_report"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-02-11",
+      "label": "Case opened",
+      "detail": "Periodic reinvestigation initiated.",
+      "category": "administrative"
+    },
+    {
+      "date": "2026-03-03",
+      "label": "Employer verification returned",
+      "detail": "Employer records office reports a June 2023 separation.",
+      "category": "employment"
+    },
+    {
+      "date": "2026-03-19",
+      "label": "Reference interview conducted",
+      "detail": "Former supervisor recalls a September 2023 departure.",
+      "category": "employment"
+    },
+    {
+      "date": "2026-04-01",
+      "label": "Applicant statement submitted",
+      "detail": "Applicant reports separation in September 2023.",
+      "category": "statement"
+    },
+    {
+      "date": "2026-04-15",
+      "label": "Case notes recorded",
+      "detail": "Conflict unresolved; documentary evidence requested.",
+      "category": "investigative"
+    }
+  ],
+  "known_contradictions": [
+    {
+      "field": "employment_end_date",
+      "note": "Employer payroll record states June 2023; the reference interview and the applicant state September 2023."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+EMPLOYER VERIFICATION RECORD
+
+Subject: Elena Vasquez
+Employer: Sterling Grove Manufacturing (fictional)
+Verification returned: March 3, 2026
+Source: Employer records office, payroll system of record
+
+Position: Quality Assurance Lead
+Employment start date: February 2020
+Employment end date: Employment ended June 2023
+Final payroll period processed: Pay period ending June 30, 2023
+Separation type recorded: Voluntary resignation
+
+The records office states that no payroll activity is recorded for this employee
+after the June 2023 pay period.

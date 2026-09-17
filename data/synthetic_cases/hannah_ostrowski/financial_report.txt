@@ -1,0 +1,12 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+FINANCIAL REPORT
+
+Report Date: 2026-04-02
+Subject: Hannah Ostrowski
+Source: Consolidated consumer credit file (synthetic)
+
+No delinquent accounts are reported. Twelve trade lines are reported, all
+current, with no 30-day or greater delinquency in the prior 84 months. Revolving
+utilisation is 6 percent. No collections, judgments, liens, bankruptcies, civil
+filings or repossessions appear in the record for the period covered.

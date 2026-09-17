@@ -1,0 +1,79 @@
+{
+  "case_number": "PS-2026-00194",
+  "applicant_name": "Jordan Reyes",
+  "slug": "jordan_reyes",
+  "status": "Awaiting AI Analysis",
+  "key_signal": "Unresolved employment-history discrepancy",
+  "scenario": "employment_discrepancy",
+  "opened_on": "2026-02-02",
+  "documents": [
+    {
+      "file": "background_investigation_summary.txt",
+      "document_name": "Background Investigation Summary",
+      "document_type": "investigation_summary"
+    },
+    {
+      "file": "employment_history.txt",
+      "document_name": "Employment History",
+      "document_type": "employment_history"
+    },
+    {
+      "file": "applicant_statement.txt",
+      "document_name": "Applicant Statement",
+      "document_type": "applicant_statement"
+    },
+    {
+      "file": "staffing_agency_record.txt",
+      "document_name": "Staffing Agency Record",
+      "document_type": "third_party_record"
+    },
+    {
+      "file": "investigator_notes.txt",
+      "document_name": "Case Notes",
+      "document_type": "case_notes"
+    },
+    {
+      "file": "financial_report.txt",
+      "document_name": "Financial Report",
+      "document_type": "financial_report"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-02-02",
+      "label": "Case opened",
+      "detail": "Initial investigation initiated.",
+      "category": "administrative"
+    },
+    {
+      "date": "2026-02-21",
+      "label": "Employment verification returned",
+      "detail": "Employer record conflicts with the applicant's questionnaire entry.",
+      "category": "employment"
+    },
+    {
+      "date": "2026-03-05",
+      "label": "Applicant statement submitted",
+      "detail": "Applicant describes a contract-to-permanent conversion.",
+      "category": "statement"
+    },
+    {
+      "date": "2026-03-27",
+      "label": "Staffing agency record received",
+      "detail": "Agency confirms a contract assignment covering the disputed period.",
+      "category": "employment"
+    },
+    {
+      "date": "2026-04-08",
+      "label": "Case notes recorded",
+      "detail": "Discrepancy partially reconciled; one month remains unverified.",
+      "category": "investigative"
+    }
+  ],
+  "known_contradictions": [
+    {
+      "field": "employment_start_date",
+      "note": "Applicant reports a January 2021 start; the staffing agency record begins February 8, 2021 and the employer confirms July 12, 2021."
+    }
+  ]
+}

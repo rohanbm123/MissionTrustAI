@@ -1,0 +1,31 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+FINANCIAL REPORT
+
+Report Date: 2026-02-04
+Subject: Alex Morgan
+Source: Consolidated consumer credit file (synthetic)
+
+DELINQUENT ACCOUNT
+Creditor: Meridian Regional Health Services
+Account reference: MRH-4471-22
+Balance reported delinquent: $18,500.00
+Date first reported delinquent: February 4, 2026
+Days past due at reporting: 121
+Account status at reporting: Referred to third-party collection agent
+
+ACCOUNT NOTES
+The creditor's file annotation records that the account is "in dispute by the
+consumer" and that the disputed amount relates to a series of billed services
+rendered between March and July 2025. The consumer's dispute was filed with the
+creditor on December 9, 2025.
+
+OTHER ACCOUNTS
+Six additional trade lines are reported. All are current with no history of
+delinquency over the prior 24 months. Total non-mortgage revolving utilisation
+is 19 percent. No bankruptcies, liens, judgments or civil filings appear in the
+record. No repossession or foreclosure activity is recorded.
+
+TOTALS
+Total delinquent balance across all accounts: $18,500.00
+Number of accounts 90+ days past due: 1

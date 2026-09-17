@@ -1,0 +1,102 @@
+{
+  "case_number": "PS-2026-00182",
+  "applicant_name": "Alex Morgan",
+  "slug": "alex_morgan",
+  "status": "Awaiting AI Analysis",
+  "key_signal": "Financial delinquency with documented mitigation",
+  "scenario": "financial_delinquency_with_mitigation",
+  "opened_on": "2026-01-20",
+  "documents": [
+    {
+      "file": "background_investigation_summary.txt",
+      "document_name": "Background Investigation Summary",
+      "document_type": "investigation_summary"
+    },
+    {
+      "file": "financial_report.txt",
+      "document_name": "Financial Report",
+      "document_type": "financial_report"
+    },
+    {
+      "file": "applicant_statement.txt",
+      "document_name": "Applicant Statement",
+      "document_type": "applicant_statement"
+    },
+    {
+      "file": "payment_plan.txt",
+      "document_name": "Payment Plan Document",
+      "document_type": "payment_plan"
+    },
+    {
+      "file": "employment_history.txt",
+      "document_name": "Employment History",
+      "document_type": "employment_history"
+    },
+    {
+      "file": "travel_disclosure.txt",
+      "document_name": "Foreign Travel Disclosure",
+      "document_type": "travel_disclosure"
+    },
+    {
+      "file": "monitoring_alert.txt",
+      "document_name": "Continuous Monitoring Alert",
+      "document_type": "monitoring_alert"
+    },
+    {
+      "file": "investigator_notes.txt",
+      "document_name": "Case Notes",
+      "document_type": "case_notes"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-01-20",
+      "label": "Case opened",
+      "detail": "Periodic reinvestigation initiated.",
+      "category": "administrative"
+    },
+    {
+      "date": "2026-02-04",
+      "label": "Financial delinquency reported",
+      "detail": "Credit report shows an $18,500 delinquent account (Meridian Regional Health Services).",
+      "category": "financial"
+    },
+    {
+      "date": "2026-02-19",
+      "label": "Applicant notified of financial issue",
+      "detail": "Request for explanation issued to applicant.",
+      "category": "administrative"
+    },
+    {
+      "date": "2026-03-14",
+      "label": "Repayment plan effective",
+      "detail": "Structured repayment agreement begins; $325 monthly.",
+      "category": "financial"
+    },
+    {
+      "date": "2026-03-18",
+      "label": "Applicant statement submitted",
+      "detail": "Applicant attributes the debt to disputed medical billing.",
+      "category": "statement"
+    },
+    {
+      "date": "2026-04-02",
+      "label": "Foreign travel disclosure filed",
+      "detail": "Germany (Sept 2025) and Singapore (Nov 2025) reported.",
+      "category": "travel"
+    },
+    {
+      "date": "2026-05-02",
+      "label": "Continuous monitoring alert",
+      "detail": "Automated alert references the same Meridian account.",
+      "category": "monitoring"
+    },
+    {
+      "date": "2026-05-06",
+      "label": "Investigator notes recorded",
+      "detail": "Payment history verified against servicer records.",
+      "category": "investigative"
+    }
+  ],
+  "known_contradictions": []
+}

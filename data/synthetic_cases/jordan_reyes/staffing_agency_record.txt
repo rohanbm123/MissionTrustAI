@@ -1,0 +1,19 @@
+FICTIONAL DEMONSTRATION DATA — NOT A REAL CASE RECORD
+
+STAFFING AGENCY RECORD
+
+Agency: Beacon Workforce Solutions (fictional)
+Worker: Jordan Reyes
+Record produced: March 27, 2026
+
+ASSIGNMENT RECORD
+Client of record: Vantage Analytics Partners
+Assignment start date: February 8, 2021
+Assignment end date: July 9, 2021
+Assignment type: Full-time contract placement
+Conversion: Worker converted to direct client employment effective July 12, 2021
+
+NOTE
+The agency's record shows the assignment beginning in February 2021. The agency
+has no record of any placement of this worker with this client during January
+2021.

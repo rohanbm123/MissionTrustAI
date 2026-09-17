@@ -1,0 +1,85 @@
+{
+  "case_number": "PS-2026-00217",
+  "applicant_name": "Marcus Dell",
+  "slug": "marcus_dell",
+  "status": "Awaiting AI Analysis",
+  "key_signal": "Undisclosed foreign travel and an unreported foreign contact",
+  "scenario": "undisclosed_foreign_travel",
+  "opened_on": "2026-01-15",
+  "documents": [
+    {
+      "file": "background_investigation_summary.txt",
+      "document_name": "Background Investigation Summary",
+      "document_type": "investigation_summary"
+    },
+    {
+      "file": "travel_disclosure.txt",
+      "document_name": "Foreign Travel Disclosure",
+      "document_type": "travel_disclosure"
+    },
+    {
+      "file": "travel_crosscheck.txt",
+      "document_name": "Travel Record Cross-Check",
+      "document_type": "record_check"
+    },
+    {
+      "file": "foreign_contact_review.txt",
+      "document_name": "Foreign Contact Review",
+      "document_type": "investigation_summary"
+    },
+    {
+      "file": "applicant_statement.txt",
+      "document_name": "Applicant Statement",
+      "document_type": "applicant_statement"
+    },
+    {
+      "file": "employment_history.txt",
+      "document_name": "Employment History",
+      "document_type": "employment_history"
+    },
+    {
+      "file": "investigator_notes.txt",
+      "document_name": "Case Notes",
+      "document_type": "case_notes"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-01-15",
+      "label": "Case opened",
+      "detail": "Periodic reinvestigation initiated.",
+      "category": "administrative"
+    },
+    {
+      "date": "2026-02-06",
+      "label": "Foreign travel disclosure filed",
+      "detail": "Applicant reports two trips over the rolling 24 months.",
+      "category": "travel"
+    },
+    {
+      "date": "2026-03-01",
+      "label": "Border-crossing cross-check",
+      "detail": "Records identify five trips; three were not disclosed.",
+      "category": "travel"
+    },
+    {
+      "date": "2026-03-22",
+      "label": "Foreign contact identified",
+      "detail": "Record review identifies a continuing contact not reported by the applicant.",
+      "category": "travel"
+    },
+    {
+      "date": "2026-04-17",
+      "label": "Applicant statement submitted",
+      "detail": "Applicant attributes the omissions to a reporting misunderstanding.",
+      "category": "statement"
+    },
+    {
+      "date": "2026-05-04",
+      "label": "Investigator notes recorded",
+      "detail": "Explanation not corroborated by the employer or any record.",
+      "category": "investigative"
+    }
+  ],
+  "known_contradictions": []
+}
